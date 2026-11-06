@@ -11,20 +11,22 @@
   "visual_review": "All 7 final page PNGs inspected; no clipping, overlap or missing figures",
   "renderer_note": "Packaged render_docx.py attempted; unavailable LibreOffice logged in word_renderer_diagnostic.txt. Native DOCX export plus Poppler page rendering used.",
   "commands": {
-    "build_word_report.py": "exit 0",
-    "export_word_report.ps1": "exit 0; 7 pages",
+    "scripts/build_report.py": "exit 0; Word-compatible export 7 pages",
     "pdftoppm -scale-to 1300 -png report/report.pdf tmp/docx_report/page": "exit 0"
   },
   "files": {
     "report/report.docx": {
       "path": "C:\\Users\\Ali\\Downloads\\gesturelab\\report\\report.docx",
-      "bytes": 250419,
-      "sha256": "ffee79061e6a35429ac923a32877f4b43fe8578957f7f6bfb7e4996488e2fd0a"
+      "bytes": 250436,
+      "sha256": "58520d0563953b5e66ac571ded277690c9f9174712b6471faf7d209e3200441c"
     },
     "report/report.pdf": {
       "path": "C:\\Users\\Ali\\Downloads\\gesturelab\\report\\report.pdf",
-      "bytes": 218521,
-      "sha256": "6dac6a48b623cee464475e5e200ff7fb9300d9201124f0a6301973d8195dd46a"
+      "bytes": 218570,
+      "sha256": "14229abe1c3c2bd9f1299cd6611fcde819a186315db71ceecc571ae68f564c56"
     }
-  }
+  },
+  "author": "Turaliyev Ali",
+  "group": "SE-2430",
+  "header_date": false
 }

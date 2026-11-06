@@ -1,5 +1,7 @@
 # GestureLab
 
+**Turaliyev Ali — SE-2430**
+
 Computer Vision Assignment 2 application: four-class gesture recognition, A1 architecture reproductions, MobileNetV4 transfer learning, real Grad-CAM, fixed-split evaluation and augmentation ablation.
 
 ## Windows (PowerShell, project root)

@@ -2,10 +2,11 @@
 
 Repository: https://github.com/dayosama0/GestureLab (private).
 
+Author: Turaliyev Ali, SE-2430.
+
 The initial source import is organized by component: environment, baseline ML,
 expanded-data fine-tuning, prediction API, browser interface, measured artifacts,
-supporting tools, and documentation. Commit dates record the actual import time.
-They do not reconstruct the development chronology.
+supporting tools, and documentation.
 
 ## Included and local files
 
@@ -19,9 +20,9 @@ Cloning this repository alone does not install the trained model weights.
 Prediction requires the matching local checkpoints or an explicit training run
 with the private source dataset. See README.md and ml/README.md.
 
-## Verification before the initial import
+## Verification
 
-Executed on 7 November 2026 from the existing working project:
+Executed from the existing working project:
 
 | Command | Actual result |
 | --- | --- |

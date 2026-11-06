@@ -47,7 +47,7 @@ doc.styles['Caption'].font.italic = False
 doc.styles['Title'].paragraph_format.space_after = Pt(6)
 doc.core_properties.title = 'GestureLab Assignment 2 Work Report'
 doc.core_properties.subject = 'Hand gesture classification application and measured experiments'
-doc.core_properties.author = ''
+doc.core_properties.author = 'Turaliyev Ali'
 doc.core_properties.keywords = 'GestureLab, Assignment 2, computer vision'
 doc.add_paragraph('GestureLab Assignment 2 Work Report', 'Title')
 

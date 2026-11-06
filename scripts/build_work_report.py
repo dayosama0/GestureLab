@@ -164,7 +164,7 @@ def make_curves():
 story.append(Paragraph("ASTANA IT UNIVERSITY / COMPUTER VISION / ASSIGNMENT 2", styles["WorkLabel"]))
 story.append(Paragraph("GestureLab", styles["Title"]))
 story.append(Paragraph("Hand gesture recognition: completed work report", styles["Heading2"]))
-p("7 November 2026 | Four classes: fist, open palm, peace and thumbs up")
+p("Turaliyev Ali | SE-2430 | Four classes: fist, open palm, peace and thumbs up")
 heading("1. What was built")
 p("GestureLab continues the Assignment 1 hand gesture task and turns it into a local web application. The work includes reproduced SimpleCNN and ResNet18 baselines, a modern MobileNetV4 classifier, a larger real-image dataset, two fine-tuned models and Grad-CAM explanations. Five trained models are available in the app; the initial MobileNetV4 no-augmentation run is retained as an experiment.")
 p("Assignment 1 supplied 400 prepared hand photographs and a notebook defining the baseline architectures. It did not supply trained checkpoints or result tables. The baselines were therefore trained again and are reported as reproductions. The original images, labels and split were kept, allowing the new models to be evaluated on the same 60-image test set.")
