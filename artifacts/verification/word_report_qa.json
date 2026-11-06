@@ -1,0 +1,30 @@
+{
+  "pages": 7,
+  "font": "Times New Roman",
+  "size_pt": 14,
+  "verified_text_runs": 177,
+  "pdf_fonts": [
+    "/AUWCNV+TimesNewRomanPSMT",
+    "/ESHXQI+TimesNewRomanPS-BoldMT"
+  ],
+  "export": "Native WPS Writer Word.Application COM export of the DOCX, not separate PDF composition",
+  "visual_review": "All 7 final page PNGs inspected; no clipping, overlap or missing figures",
+  "renderer_note": "Packaged render_docx.py attempted; unavailable LibreOffice logged in word_renderer_diagnostic.txt. Native DOCX export plus Poppler page rendering used.",
+  "commands": {
+    "build_word_report.py": "exit 0",
+    "export_word_report.ps1": "exit 0; 7 pages",
+    "pdftoppm -scale-to 1300 -png report/report.pdf tmp/docx_report/page": "exit 0"
+  },
+  "files": {
+    "report/report.docx": {
+      "path": "C:\\Users\\Ali\\Downloads\\gesturelab\\report\\report.docx",
+      "bytes": 250419,
+      "sha256": "ffee79061e6a35429ac923a32877f4b43fe8578957f7f6bfb7e4996488e2fd0a"
+    },
+    "report/report.pdf": {
+      "path": "C:\\Users\\Ali\\Downloads\\gesturelab\\report\\report.pdf",
+      "bytes": 218521,
+      "sha256": "6dac6a48b623cee464475e5e200ff7fb9300d9201124f0a6301973d8195dd46a"
+    }
+  }
+}

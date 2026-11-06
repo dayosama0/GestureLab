@@ -1,0 +1,15 @@
+{
+  "hardware": "NVIDIA GeForce GTX1660Ti6GB",
+  "torch": "2.6.0+cu124",
+  "batch_size": 16,
+  "resnet18_finetuned": {
+    "amp": true,
+    "finite_backward_verified": true
+  },
+  "mobilenetv4_finetuned": {
+    "amp": false,
+    "dtype": "float32",
+    "reason": "CUDA fp16 smoke produced nonfinite first-convolution gradients even with pretrained initialization; float32 backward and optimizer update passed"
+  },
+  "scope": "Compatibility checks only, no dataset performance results; no production weights emitted"
+}

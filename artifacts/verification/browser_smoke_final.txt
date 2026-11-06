@@ -1,0 +1,8 @@
+PASS empty Studio requires source image
+PASS real upload prediction and Grad-CAM {"model_id":"mobilenetv4","label":"fist","version":"f759b9ea8be49117dcd958db62359b5cc2eac16aeec442bf2265af4054433d2f"}
+PASS same-image model comparison {"models":["simple_cnn","resnet18","mobilenetv4"]}
+PASS factual experiment rows {"runs":["simple_cnn","resnet18","mobilenetv4","mobilenetv4_noaug"]}
+PASS 360px responsive navigation and no page overflow
+PASS no uncaught browser runtime errors
+PASS missing checkpoints disable prediction (browser-only fixture)
+PASS camera denial handled (browser-only rejection)

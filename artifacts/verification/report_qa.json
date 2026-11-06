@@ -1,0 +1,18 @@
+{
+  "report": "C:\\Users\\Ali\\Downloads\\gesturelab\\report\\report.pdf",
+  "pages": 7,
+  "sha256": "2c37294586e16cdad4338fb38e170e39ad3e94733adb8c1133e5314ef97131bd",
+  "visual_qa": "All 7 rendered pages inspected in contact sheet; pages3 and7 also inspected full size; no overlap/clipping observed.",
+  "page_text_lengths": [
+    2336,
+    2715,
+    2749,
+    1455,
+    1227,
+    2379,
+    3766
+  ],
+  "render_command": "pdftoppm -r 85 -png report/report.pdf artifacts/verification/report",
+  "source_script": "scripts/build_report.py",
+  "final_update": "Page7 refreshed with actual229.24-second video evidence; all other pages unchanged."
+}

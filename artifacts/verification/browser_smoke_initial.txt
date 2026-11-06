@@ -1,0 +1,8 @@
+PASS empty Studio requires source image
+PASS real upload prediction and Grad-CAM {"model_id":"simple_cnn","label":"fist","version":"705f864889a1d15cf804e65b22e874723b2eed8ec6b6c3e1cd92e5f0c64839b4"}
+PASS same-image model comparison {"models":["simple_cnn"]}
+PASS factual experiment rows {"runs":["simple_cnn"]}
+PASS 360px responsive navigation and no page overflow
+PASS no uncaught browser runtime errors
+PASS missing checkpoints disable prediction (browser-only fixture)
+PASS camera denial handled (browser-only rejection)

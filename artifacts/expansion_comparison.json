@@ -1,0 +1,584 @@
+{
+  "manifest_sha256": "7e5e76a5501f536765295c364908f892e42e4f29a08a4a81b646478f7313f048",
+  "expanded_test_count": 400,
+  "selection_policy": "New validation only. These final test results do not choose the default model.",
+  "caveat": "Expansion and backbone fine-tuning both changed; this comparison does not isolate either factor.",
+  "legacy_artifacts_unchanged": true,
+  "models": [
+    {
+      "model_id": "simple_cnn",
+      "metrics": {
+        "accuracy": 0.9,
+        "precision_macro": 0.9037608421452761,
+        "recall_macro": 0.8999999999999999,
+        "f1_macro": 0.8976372305057134,
+        "per_class": {
+          "fist": {
+            "precision": 0.8660714285714286,
+            "recall": 0.97,
+            "f1-score": 0.9150943396226415,
+            "support": 100.0
+          },
+          "open_palm": {
+            "precision": 0.9487179487179487,
+            "recall": 0.74,
+            "f1-score": 0.8314606741573034,
+            "support": 100.0
+          },
+          "peace": {
+            "precision": 0.8867924528301887,
+            "recall": 0.94,
+            "f1-score": 0.912621359223301,
+            "support": 100.0
+          },
+          "thumbs_up": {
+            "precision": 0.9134615384615384,
+            "recall": 0.95,
+            "f1-score": 0.9313725490196079,
+            "support": 100.0
+          }
+        },
+        "sample_count": 400,
+        "accuracy_wilson_95": [
+          0.8666894236725972,
+          0.9257007408599657
+        ],
+        "interval_caveat": "Binomial interval assumes independent samples; subject/session independence unverified"
+      },
+      "confusion_matrix": [
+        [
+          97,
+          2,
+          1,
+          0
+        ],
+        [
+          15,
+          74,
+          7,
+          4
+        ],
+        [
+          0,
+          1,
+          94,
+          5
+        ],
+        [
+          0,
+          1,
+          4,
+          95
+        ]
+      ],
+      "latency_same_host_cpu": {
+        "mean_ms": 1.4808599999014405,
+        "p50_ms": 1.395500000398897,
+        "p95_ms": 1.9890050003596118,
+        "device": "cpu",
+        "repeats": 20,
+        "warmup": 3,
+        "scope": "single-image forward only; preprocessing/network/explanation excluded",
+        "cpu": "Intel64 Family 6 Model 158 Stepping 11, GenuineIntel",
+        "torch_threads": 2,
+        "raw_ms": [
+          1.271400000405265,
+          1.3925000002927845,
+          1.3376999995671213,
+          1.2681000007432885,
+          1.481499999499647,
+          1.3276999998197425,
+          1.3271000007080147,
+          1.3985000005050097,
+          1.3156000004528323,
+          1.27509999947506,
+          1.2986999990971526,
+          1.6552999986743089,
+          1.5401000000565546,
+          1.7592999993212288,
+          2.1885999994992744,
+          1.4522999990731478,
+          1.9785000004048925,
+          1.4527000002999557,
+          1.5984000001481036,
+          1.2980999999854248
+        ]
+      },
+      "prediction_source": "artifacts/metrics/predictions_simple_cnn_expanded_test.csv",
+      "checkpoint_sha256": "705f864889a1d15cf804e65b22e874723b2eed8ec6b6c3e1cd92e5f0c64839b4",
+      "preprocessing": {
+        "input_size": 224,
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      }
+    },
+    {
+      "model_id": "resnet18",
+      "metrics": {
+        "accuracy": 0.9375,
+        "precision_macro": 0.9411483927108927,
+        "recall_macro": 0.9375,
+        "f1_macro": 0.9375100868317037,
+        "per_class": {
+          "fist": {
+            "precision": 0.96875,
+            "recall": 0.93,
+            "f1-score": 0.9489795918367347,
+            "support": 100.0
+          },
+          "open_palm": {
+            "precision": 0.9886363636363636,
+            "recall": 0.87,
+            "f1-score": 0.925531914893617,
+            "support": 100.0
+          },
+          "peace": {
+            "precision": 0.9333333333333333,
+            "recall": 0.98,
+            "f1-score": 0.9560975609756097,
+            "support": 100.0
+          },
+          "thumbs_up": {
+            "precision": 0.8738738738738738,
+            "recall": 0.97,
+            "f1-score": 0.919431279620853,
+            "support": 100.0
+          }
+        },
+        "sample_count": 400,
+        "accuracy_wilson_95": [
+          0.9093658838696931,
+          0.9573108585877975
+        ],
+        "interval_caveat": "Binomial interval assumes independent samples; subject/session independence unverified"
+      },
+      "confusion_matrix": [
+        [
+          93,
+          1,
+          1,
+          5
+        ],
+        [
+          3,
+          87,
+          3,
+          7
+        ],
+        [
+          0,
+          0,
+          98,
+          2
+        ],
+        [
+          0,
+          0,
+          3,
+          97
+        ]
+      ],
+      "latency_same_host_cpu": {
+        "mean_ms": 43.14929000001939,
+        "p50_ms": 42.07589999987249,
+        "p95_ms": 50.623190000533214,
+        "device": "cpu",
+        "repeats": 20,
+        "warmup": 3,
+        "scope": "single-image forward only; preprocessing/network/explanation excluded",
+        "cpu": "Intel64 Family 6 Model 158 Stepping 11, GenuineIntel",
+        "torch_threads": 2,
+        "raw_ms": [
+          39.666300001044874,
+          42.720500001451,
+          42.08730000027572,
+          48.42639999878884,
+          51.42669999986538,
+          45.236099998874124,
+          40.61640000145417,
+          41.715600000316044,
+          50.58090000056836,
+          41.88830000020971,
+          42.42720000002009,
+          40.909999999712454,
+          42.40430000027118,
+          42.06449999946926,
+          41.202299998985836,
+          43.4095000000525,
+          40.80249999969965,
+          40.67450000002282,
+          40.84530000000086,
+          43.881199999304954
+        ]
+      },
+      "prediction_source": "artifacts/metrics/predictions_resnet18_expanded_test.csv",
+      "checkpoint_sha256": "b7350ba08e13105b81ab39ad8a86e61d6160b1fbbd22d9cf78ae67267f3e7b1f",
+      "preprocessing": {
+        "input_size": 224,
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      }
+    },
+    {
+      "model_id": "mobilenetv4",
+      "metrics": {
+        "accuracy": 0.915,
+        "precision_macro": 0.9159785761601242,
+        "recall_macro": 0.915,
+        "f1_macro": 0.9147371780866871,
+        "per_class": {
+          "fist": {
+            "precision": 0.96875,
+            "recall": 0.93,
+            "f1-score": 0.9489795918367347,
+            "support": 100.0
+          },
+          "open_palm": {
+            "precision": 0.8811881188118812,
+            "recall": 0.89,
+            "f1-score": 0.8855721393034826,
+            "support": 100.0
+          },
+          "peace": {
+            "precision": 0.9148936170212766,
+            "recall": 0.86,
+            "f1-score": 0.8865979381443299,
+            "support": 100.0
+          },
+          "thumbs_up": {
+            "precision": 0.8990825688073395,
+            "recall": 0.98,
+            "f1-score": 0.937799043062201,
+            "support": 100.0
+          }
+        },
+        "sample_count": 400,
+        "accuracy_wilson_95": [
+          0.8835678157264721,
+          0.9385369799760619
+        ],
+        "interval_caveat": "Binomial interval assumes independent samples; subject/session independence unverified"
+      },
+      "confusion_matrix": [
+        [
+          93,
+          2,
+          3,
+          2
+        ],
+        [
+          2,
+          89,
+          3,
+          6
+        ],
+        [
+          1,
+          10,
+          86,
+          3
+        ],
+        [
+          0,
+          0,
+          2,
+          98
+        ]
+      ],
+      "latency_same_host_cpu": {
+        "mean_ms": 18.587120000211144,
+        "p50_ms": 17.99404999928811,
+        "p95_ms": 22.86136999973678,
+        "device": "cpu",
+        "repeats": 20,
+        "warmup": 3,
+        "scope": "single-image forward only; preprocessing/network/explanation excluded",
+        "cpu": "Intel64 Family 6 Model 158 Stepping 11, GenuineIntel",
+        "torch_threads": 2,
+        "raw_ms": [
+          17.349300000205403,
+          16.472400000566267,
+          16.436800000519725,
+          18.653299999641604,
+          17.6262000004499,
+          21.73900000161666,
+          17.116700000769924,
+          18.500799998946604,
+          17.997099999774946,
+          22.79389999966952,
+          18.74830000087968,
+          17.900200000440236,
+          17.543799998748,
+          24.143300001014723,
+          17.602800000531715,
+          17.99099999880127,
+          19.39200000015262,
+          18.7342000008357,
+          16.646899999614106,
+          18.35440000104427
+        ]
+      },
+      "prediction_source": "artifacts/metrics/predictions_mobilenetv4_expanded_test.csv",
+      "checkpoint_sha256": "f759b9ea8be49117dcd958db62359b5cc2eac16aeec442bf2265af4054433d2f",
+      "preprocessing": {
+        "input_size": 224,
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      }
+    },
+    {
+      "model_id": "resnet18_finetuned",
+      "metrics": {
+        "accuracy": 1.0,
+        "precision_macro": 1.0,
+        "recall_macro": 1.0,
+        "f1_macro": 1.0,
+        "per_class": {
+          "fist": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 100.0
+          },
+          "open_palm": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 100.0
+          },
+          "peace": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 100.0
+          },
+          "thumbs_up": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 100.0
+          }
+        },
+        "sample_count": 400,
+        "accuracy_wilson_95": [
+          0.9904877056657034,
+          0.9999999999999999
+        ],
+        "interval_caveat": "Image-level Wilson interval assumes independent errors. Official user IDs verify between-split participant exclusion; repeated images within an expanded-set participant may remain correlated."
+      },
+      "confusion_matrix": [
+        [
+          100,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          100,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          100,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          100
+        ]
+      ],
+      "latency_same_host_cpu": {
+        "mean_ms": 49.359520000052726,
+        "p50_ms": 44.67169999952603,
+        "p95_ms": 61.19072500123371,
+        "device": "cpu",
+        "repeats": 20,
+        "warmup": 3,
+        "scope": "single-image forward only; preprocessing/network/explanation excluded",
+        "cpu": "Intel64 Family 6 Model 158 Stepping 11, GenuineIntel",
+        "torch_threads": 2,
+        "raw_ms": [
+          57.60470000132045,
+          129.32519999958458,
+          45.65050000019255,
+          41.94869999992079,
+          43.93469999922672,
+          49.20730000048934,
+          50.22449999887613,
+          43.22479999973439,
+          44.81850000047416,
+          47.87360000045737,
+          45.15290000017558,
+          40.7364000002417,
+          44.524899998577894,
+          41.27930000140623,
+          39.93790000095032,
+          42.765199999848846,
+          45.15940000055707,
+          43.556300001000636,
+          47.9204999992362,
+          42.34509999878355
+        ]
+      },
+      "prediction_source": "artifacts/metrics/resnet18_finetuned.json#expanded_test",
+      "checkpoint_sha256": "d912da8e800701ec70fbf1f7330ca40593fe4f84fafa5d4f8a9730d7d6e3e26e",
+      "preprocessing": {
+        "input_size": 224,
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ]
+      }
+    },
+    {
+      "model_id": "mobilenetv4_finetuned",
+      "metrics": {
+        "accuracy": 1.0,
+        "precision_macro": 1.0,
+        "recall_macro": 1.0,
+        "f1_macro": 1.0,
+        "per_class": {
+          "fist": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 100.0
+          },
+          "open_palm": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 100.0
+          },
+          "peace": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 100.0
+          },
+          "thumbs_up": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 100.0
+          }
+        },
+        "sample_count": 400,
+        "accuracy_wilson_95": [
+          0.9904877056657034,
+          0.9999999999999999
+        ],
+        "interval_caveat": "Image-level Wilson interval assumes independent errors. Official user IDs verify between-split participant exclusion; repeated images within an expanded-set participant may remain correlated."
+      },
+      "confusion_matrix": [
+        [
+          100,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          100,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          100,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          100
+        ]
+      ],
+      "latency_same_host_cpu": {
+        "mean_ms": 15.092284999900585,
+        "p50_ms": 14.911799999936193,
+        "p95_ms": 16.605990000243764,
+        "device": "cpu",
+        "repeats": 20,
+        "warmup": 3,
+        "scope": "single-image forward only; preprocessing/network/explanation excluded",
+        "cpu": "Intel64 Family 6 Model 158 Stepping 11, GenuineIntel",
+        "torch_threads": 2,
+        "raw_ms": [
+          14.285299999755807,
+          16.87560000027588,
+          16.129699999510194,
+          15.872300000410178,
+          13.883999999961816,
+          16.591800000242074,
+          14.45659999990312,
+          15.365499999461463,
+          13.834199999109842,
+          14.142399999400368,
+          16.085499999462627,
+          14.109600000665523,
+          15.5717999987246,
+          14.024800000697724,
+          16.040300000895513,
+          14.111700000285055,
+          14.458100000410923,
+          14.295900000433903,
+          15.47529999879771,
+          16.235299999607378
+        ]
+      },
+      "prediction_source": "artifacts/metrics/mobilenetv4_finetuned.json#expanded_test",
+      "checkpoint_sha256": "5af916440bf7f3af9f0a2578b844f2215043af6337ee8b8d6c4dd1a53eed50af",
+      "preprocessing": {
+        "input_size": 256,
+        "mean": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "std": [
+          0.5,
+          0.5,
+          0.5
+        ]
+      }
+    }
+  ]
+}

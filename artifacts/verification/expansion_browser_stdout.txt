@@ -1,0 +1,12 @@
+PASS legacy checkpoints and metrics unchanged {"files":13}
+PASS new run hashes, true backbone changes, separated test counts and CPU timing
+PASS API exposes five real models and six factual experiments
+PASS actual checkpoint prediction and correctly sized Grad-CAM {"model_id":"simple_cnn","input_size":224,"label":"fist","version":"705f864889a1d15cf804e65b22e874723b2eed8ec6b6c3e1cd92e5f0c64839b4"}
+PASS actual checkpoint prediction and correctly sized Grad-CAM {"model_id":"resnet18","input_size":224,"label":"fist","version":"b7350ba08e13105b81ab39ad8a86e61d6160b1fbbd22d9cf78ae67267f3e7b1f"}
+PASS actual checkpoint prediction and correctly sized Grad-CAM {"model_id":"mobilenetv4","input_size":224,"label":"fist","version":"f759b9ea8be49117dcd958db62359b5cc2eac16aeec442bf2265af4054433d2f"}
+PASS actual checkpoint prediction and correctly sized Grad-CAM {"model_id":"resnet18_finetuned","input_size":224,"label":"fist","version":"d912da8e800701ec70fbf1f7330ca40593fe4f84fafa5d4f8a9730d7d6e3e26e"}
+PASS actual checkpoint prediction and correctly sized Grad-CAM {"model_id":"mobilenetv4_finetuned","input_size":256,"label":"fist","version":"5af916440bf7f3af9f0a2578b844f2215043af6337ee8b8d6c4dd1a53eed50af"}
+PASS browser upload and native256 fine-tuned explanation
+PASS five-model same-image browser comparison
+PASS six factual runs and selectable fine-tuned experiment
+PASS 360px four-page layout and no uncaught browser errors

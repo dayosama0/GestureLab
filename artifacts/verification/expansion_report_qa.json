@@ -1,0 +1,21 @@
+{
+  "path": "C:\\Users\\Ali\\Downloads\\gesturelab\\report\\archive\\report_expansion_2026-11-07.pdf",
+  "pages": 8,
+  "sha256": "f6e29bcae667a893b3bc747ca471671e0e629462198fbdfb69e1dd634149792e",
+  "page_text_lengths": [
+    2487,
+    3091,
+    2571,
+    1293,
+    1638,
+    1497,
+    1892,
+    3673
+  ],
+  "render_command": "pdftoppm -r 85 -png report/report.pdf artifacts/verification/expanded-report",
+  "visual_review": "All8 rendered pages in contact sheet; pages3/4/5/8 also viewed individually. No clipping/overlap; confusion high values recolored white for contrast.",
+  "source_script": "scripts/build_expanded_report.py",
+  "old_report_archive": "report/archive/report_2026-10-30.pdf",
+  "current_phone_holdout_status": "pending; not used for training",
+  "superseded_by": "report/report.pdf: six-page practical completed-work report"
+}

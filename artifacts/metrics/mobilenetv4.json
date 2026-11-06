@@ -1,0 +1,397 @@
+{
+  "run_id": "mobilenetv4",
+  "model_id": "mobilenetv4",
+  "metadata": {
+    "model_id": "mobilenetv4",
+    "classes": [
+      "fist",
+      "open_palm",
+      "peace",
+      "thumbs_up"
+    ],
+    "trained": true,
+    "input_size": 224,
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "seed": 42,
+    "augmentation": "moderate_4_fixed_variants_plus_original",
+    "pretrained_source": "timm/mobilenetv4_conv_small.e3600_r256_in1k",
+    "backbone_frozen": true,
+    "best_epoch": 12,
+    "pretrained_weights_loaded": true,
+    "pretrained_config": {
+      "architecture": "mobilenetv4_conv_small",
+      "hf_hub_id": "timm/mobilenetv4_conv_small.e3600_r256_in1k",
+      "url": "",
+      "input_size": [
+        3,
+        256,
+        256
+      ],
+      "mean": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "std": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "source_dataset_license": "Not supplied; do not redistribute private source photos",
+    "best_val_loss": 0.13225584775209426,
+    "epoch_budget": 15,
+    "patience": 5,
+    "actual_epochs": 15,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "checkpoint_selection": "minimum validation cross-entropy",
+    "trained_at": "2026-10-30T05:46:12.463561+00:00",
+    "training_seconds": 21.507739499997115,
+    "normalization_policy": "ImageNet; 224 RGB gray-128 letterbox, user-selected hand ROI",
+    "pretrained_native_input_size": 256,
+    "adaptation": "MobileNetV4 native 256 weights evaluated at shared 224 ROI",
+    "dataset_audit_sha256": "c973a36c77466e2ef4a362af0e7b9cb0437e5f822047d7131d2e49b225155dfc",
+    "environment": {
+      "python": "3.10.9",
+      "torch": "2.14.1+cpu",
+      "platform": "Windows-10-10.0.19045-SP0",
+      "processor": "Intel64 Family 6 Model 158 Stepping 11, GenuineIntel",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.5415400610651289,
+      "val_loss": 0.34651299715042116,
+      "train_accuracy": 0.8278571428571428,
+      "val_accuracy": 0.9
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.14175096026488712,
+      "val_loss": 0.2501697560151418,
+      "train_accuracy": 0.9785714285714285,
+      "val_accuracy": 0.9
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.0806586232142789,
+      "val_loss": 0.217521529396375,
+      "train_accuracy": 0.9928571428571429,
+      "val_accuracy": 0.9333333333333333
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.05539689511060715,
+      "val_loss": 0.19198102454344432,
+      "train_accuracy": 0.9985714285714286,
+      "val_accuracy": 0.9333333333333333
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.04142388452376638,
+      "val_loss": 0.17694564759731293,
+      "train_accuracy": 0.9978571428571429,
+      "val_accuracy": 0.9666666666666667
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.032774131234203065,
+      "val_loss": 0.16282023439804713,
+      "train_accuracy": 1.0,
+      "val_accuracy": 0.9666666666666667
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.026507177012307304,
+      "val_loss": 0.16185629119475684,
+      "train_accuracy": 0.9992857142857143,
+      "val_accuracy": 0.9666666666666667
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.02222460687160492,
+      "val_loss": 0.15706087599198024,
+      "train_accuracy": 1.0,
+      "val_accuracy": 0.9666666666666667
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.018494558898465973,
+      "val_loss": 0.1466366782784462,
+      "train_accuracy": 0.9992857142857143,
+      "val_accuracy": 0.9833333333333333
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.016732992811926774,
+      "val_loss": 0.14609137823184332,
+      "train_accuracy": 1.0,
+      "val_accuracy": 0.9666666666666667
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.014233917061771665,
+      "val_loss": 0.14301713258028032,
+      "train_accuracy": 1.0,
+      "val_accuracy": 0.9833333333333333
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.01414594176092318,
+      "val_loss": 0.13225584775209426,
+      "train_accuracy": 0.9992857142857143,
+      "val_accuracy": 0.9666666666666667
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.011866847154285227,
+      "val_loss": 0.14765271718303363,
+      "train_accuracy": 1.0,
+      "val_accuracy": 0.9833333333333333
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.011995583714119025,
+      "val_loss": 0.14447682201862336,
+      "train_accuracy": 1.0,
+      "val_accuracy": 0.9833333333333333
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.010701327150953668,
+      "val_loss": 0.14222829168041548,
+      "train_accuracy": 0.9992857142857143,
+      "val_accuracy": 0.9833333333333333
+    }
+  ],
+  "metrics": {
+    "accuracy": 0.9333333333333333,
+    "precision_macro": 0.9427083333333334,
+    "recall_macro": 0.9333333333333333,
+    "f1_macro": 0.9307466726821566,
+    "per_class": {
+      "fist": {
+        "precision": 0.9375,
+        "recall": 1.0,
+        "f1-score": 0.967741935483871,
+        "support": 15.0
+      },
+      "open_palm": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 15.0
+      },
+      "peace": {
+        "precision": 1.0,
+        "recall": 0.7333333333333333,
+        "f1-score": 0.8461538461538461,
+        "support": 15.0
+      },
+      "thumbs_up": {
+        "precision": 0.8333333333333334,
+        "recall": 1.0,
+        "f1-score": 0.9090909090909091,
+        "support": 15.0
+      }
+    },
+    "sample_count": 60,
+    "accuracy_wilson_95": [
+      0.8407464268680283,
+      0.9737713012754938
+    ],
+    "interval_caveat": "Binomial interval assumes independent samples; subject/session independence unverified"
+  },
+  "confusion_matrix": [
+    [
+      15,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      15,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      11,
+      3
+    ],
+    [
+      0,
+      0,
+      0,
+      15
+    ]
+  ],
+  "latency": {
+    "mean_ms": 20.06430000074033,
+    "p50_ms": 19.256350002251565,
+    "p95_ms": 25.825500001519686,
+    "device": "cpu",
+    "repeats": 20,
+    "warmup": 3,
+    "scope": "single-image forward only; preprocessing/network/explanation excluded",
+    "cpu": "Intel64 Family 6 Model 158 Stepping 11, GenuineIntel",
+    "torch_threads": 2,
+    "raw_ms": [
+      25.987000000895932,
+      19.258300002547912,
+      20.030100000440143,
+      18.157400001655333,
+      20.41750000353204,
+      23.64839999791002,
+      18.330400002014358,
+      19.552700003259815,
+      18.508399996790104,
+      19.76190000277711,
+      25.817000001552515,
+      20.250100002158433,
+      18.49439999932656,
+      19.821900001261383,
+      19.25440000195522,
+      19.07070000015665,
+      18.65900000120746,
+      18.73440000053961,
+      18.882899996242486,
+      18.64909999858355
+    ]
+  },
+  "stress": {
+    "dim_brightness_0.5": {
+      "accuracy": 0.9166666666666666,
+      "precision_macro": 0.9248511904761905,
+      "recall_macro": 0.9166666666666667,
+      "f1_macro": 0.9155683644004,
+      "per_class": {
+        "fist": {
+          "precision": 1.0,
+          "recall": 0.8,
+          "f1-score": 0.8888888888888888,
+          "support": 15.0
+        },
+        "open_palm": {
+          "precision": 0.8333333333333334,
+          "recall": 1.0,
+          "f1-score": 0.9090909090909091,
+          "support": 15.0
+        },
+        "peace": {
+          "precision": 0.9285714285714286,
+          "recall": 0.8666666666666667,
+          "f1-score": 0.896551724137931,
+          "support": 15.0
+        },
+        "thumbs_up": {
+          "precision": 0.9375,
+          "recall": 1.0,
+          "f1-score": 0.967741935483871,
+          "support": 15.0
+        }
+      },
+      "sample_count": 60,
+      "accuracy_wilson_95": [
+        0.8193105798166558,
+        0.9638795433982692
+      ],
+      "interval_caveat": "Binomial interval assumes independent samples; subject/session independence unverified"
+    },
+    "gaussian_blur_radius_2": {
+      "accuracy": 0.85,
+      "precision_macro": 0.8892045454545454,
+      "recall_macro": 0.8500000000000001,
+      "f1_macro": 0.8481520114584631,
+      "per_class": {
+        "fist": {
+          "precision": 1.0,
+          "recall": 0.8666666666666667,
+          "f1-score": 0.9285714285714286,
+          "support": 15.0
+        },
+        "open_palm": {
+          "precision": 0.6818181818181818,
+          "recall": 1.0,
+          "f1-score": 0.8108108108108109,
+          "support": 15.0
+        },
+        "peace": {
+          "precision": 1.0,
+          "recall": 0.6,
+          "f1-score": 0.75,
+          "support": 15.0
+        },
+        "thumbs_up": {
+          "precision": 0.875,
+          "recall": 0.9333333333333333,
+          "f1-score": 0.9032258064516129,
+          "support": 15.0
+        }
+      },
+      "sample_count": 60,
+      "accuracy_wilson_95": [
+        0.7388541093022145,
+        0.9190255941983225
+      ],
+      "interval_caveat": "Binomial interval assumes independent samples; subject/session independence unverified"
+    },
+    "jpeg_quality_30": {
+      "accuracy": 0.8833333333333333,
+      "precision_macro": 0.9204545454545454,
+      "recall_macro": 0.8833333333333334,
+      "f1_macro": 0.8892106392106391,
+      "per_class": {
+        "fist": {
+          "precision": 1.0,
+          "recall": 0.8666666666666667,
+          "f1-score": 0.9285714285714286,
+          "support": 15.0
+        },
+        "open_palm": {
+          "precision": 0.6818181818181818,
+          "recall": 1.0,
+          "f1-score": 0.8108108108108109,
+          "support": 15.0
+        },
+        "peace": {
+          "precision": 1.0,
+          "recall": 0.8,
+          "f1-score": 0.8888888888888888,
+          "support": 15.0
+        },
+        "thumbs_up": {
+          "precision": 1.0,
+          "recall": 0.8666666666666667,
+          "f1-score": 0.9285714285714286,
+          "support": 15.0
+        }
+      },
+      "sample_count": 60,
+      "accuracy_wilson_95": [
+        0.7782121197582914,
+        0.9423227935994396
+      ],
+      "interval_caveat": "Binomial interval assumes independent samples; subject/session independence unverified"
+    }
+  },
+  "checkpoint_sha256": "f759b9ea8be49117dcd958db62359b5cc2eac16aeec442bf2265af4054433d2f",
+  "test_protocol": "Unaugmented source test, evaluated after validation selection; stress separate",
+  "uncertainty": "60 test images, 15/class; subject/session independence unverified"
+}

@@ -1,0 +1,47 @@
+{
+  "data_manifest_sha256": "7e5e76a5501f536765295c364908f892e42e4f29a08a4a81b646478f7313f048",
+  "runs": [
+    {
+      "run_id": "resnet18_finetuned",
+      "checkpoint_sha256": "d912da8e800701ec70fbf1f7330ca40593fe4f84fafa5d4f8a9730d7d6e3e26e",
+      "validation_f1_macro": 1.0,
+      "original_test_accuracy": 1.0,
+      "expanded_test_accuracy": 1.0,
+      "training_environment": {
+        "python": "3.10.9",
+        "torch": "2.6.0+cu124",
+        "device": "cuda",
+        "gpu": "NVIDIA GeForce GTX 1660 Ti",
+        "cuda": "12.4",
+        "amp": true,
+        "precision_policy": "ResNet CUDA AMP; MobileNet CUDA float32 after observed nonfinite fp16 gradients on GTX1660Ti",
+        "peak_cuda_memory_bytes": 449586176,
+        "cpu": "Intel64 Family 6 Model 158 Stepping 11, GenuineIntel",
+        "cpu_threads": 2,
+        "platform": "Windows-10-10.0.19045-SP0"
+      }
+    },
+    {
+      "run_id": "mobilenetv4_finetuned",
+      "checkpoint_sha256": "5af916440bf7f3af9f0a2578b844f2215043af6337ee8b8d6c4dd1a53eed50af",
+      "validation_f1_macro": 0.9974999374984375,
+      "original_test_accuracy": 1.0,
+      "expanded_test_accuracy": 1.0,
+      "training_environment": {
+        "python": "3.10.9",
+        "torch": "2.6.0+cu124",
+        "device": "cuda",
+        "gpu": "NVIDIA GeForce GTX 1660 Ti",
+        "cuda": "12.4",
+        "amp": false,
+        "precision_policy": "ResNet CUDA AMP; MobileNet CUDA float32 after observed nonfinite fp16 gradients on GTX1660Ti",
+        "peak_cuda_memory_bytes": 454705664,
+        "cpu": "Intel64 Family 6 Model 158 Stepping 11, GenuineIntel",
+        "cpu_threads": 2,
+        "platform": "Windows-10-10.0.19045-SP0"
+      }
+    }
+  ],
+  "legacy_artifacts_unchanged": true,
+  "configuration": "artifacts/verification/expansion_configuration.json"
+}

@@ -1,0 +1,10 @@
+{
+  "typecheck": "PASS",
+  "lint": "PASS",
+  "unit_tests_passed": 22,
+  "browser_ui_tests_passed": 10,
+  "browser_ui_seconds": 8.8,
+  "build": "PASS",
+  "real_browser_checks_passed": 12,
+  "scope": "UI tests include isolated fixtures; the separate expansion browser script uses five real trained models and six real experiment artifacts."
+}

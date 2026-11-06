@@ -1,0 +1,24 @@
+{
+  "path": "C:\\Users\\Ali\\Downloads\\gesturelab\\report\\report.pdf",
+  "pages": 6,
+  "bytes": 410175,
+  "sha256": "55a7b46499ff4fc709281242352170e7ff9dfa63e121798969aa353622c7e2b6",
+  "style": "practical completed-work report",
+  "generator": "scripts/build_work_report.py",
+  "canonical_command": ".venv/Scripts/python scripts/build_report.py",
+  "renders": "tmp/pdfs/work_report/page-1.png through page-6.png",
+  "visual_review": "Docs owner inspected all6 rendered pages; independent QA reviewed all6 contact and full pages5/6; root inspected latest contact. No clipping/overlap.",
+  "required_content_preserved": [
+    "A1continuity",
+    "modernMobileNetV4",
+    "workingupload/camera interface",
+    "actualmetrics andtrainingcurves",
+    "augmentationablation",
+    "GradCAM",
+    "CPUlatency",
+    "HaGRIDsource andcustomlicense",
+    "realphotographs plusclassicalaugmentation, noT2I/T2Vtraining"
+  ],
+  "unsupported_manual_authorship_claim": false,
+  "phone_evaluation": "pending"
+}

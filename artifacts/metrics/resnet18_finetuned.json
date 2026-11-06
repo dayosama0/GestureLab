@@ -1,0 +1,726 @@
+{
+  "run_id": "resnet18_finetuned",
+  "model_id": "resnet18_finetuned",
+  "metadata": {
+    "model_id": "resnet18_finetuned",
+    "classes": [
+      "fist",
+      "open_palm",
+      "peace",
+      "thumbs_up"
+    ],
+    "trained": true,
+    "input_size": 224,
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "seed": 42,
+    "pretrained_source": "torchvision ResNet18_Weights.IMAGENET1K_V1",
+    "pretrained_weights_loaded": true,
+    "initialization": "fresh original ImageNet pretrained backbone; new four-class head",
+    "pretrained_config": {},
+    "backbone_frozen": false,
+    "training_method": "2-stage head warmup then full-backbone gradient fine-tuning",
+    "finetuned_backbone_parameters": 11176512,
+    "augmentation": "train_only_on_the_fly_flip_affine_color_jitter; no synthetic media",
+    "best_epoch": 9,
+    "best_val_loss": 0.002438042163848877,
+    "actual_epochs": 10,
+    "head_epochs": 2,
+    "validation_metrics": {
+      "accuracy": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "f1_macro": 1.0,
+      "per_class": {
+        "fist": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 100.0
+        },
+        "open_palm": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 100.0
+        },
+        "peace": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 100.0
+        },
+        "thumbs_up": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 100.0
+        }
+      },
+      "sample_count": 400,
+      "accuracy_wilson_95": [
+        0.9904877056657034,
+        0.9999999999999999
+      ],
+      "interval_caveat": "Official participant IDs are excluded across splits; image-level interval may understate within-user correlation."
+    },
+    "finetune_epoch_budget": 8,
+    "patience": 4,
+    "batch_size": 16,
+    "head_warmup_lr": 0.001,
+    "finetune_backbone_lr": 1e-05,
+    "finetune_head_lr": 0.0001,
+    "weight_decay": 0.0001,
+    "checkpoint_selection": "minimum new HaGRID validation cross-entropy; known-user-disjoint splits; only post-backbone-optimization checkpoints eligible",
+    "trained_at": "2026-11-06T21:56:12.286067+00:00",
+    "training_seconds": 606.3400140000003,
+    "train_count": 2280,
+    "validation_count": 400,
+    "expanded_test_count": 400,
+    "manifest_path": "data/expanded/manifest.json",
+    "data_audit": {
+      "manifest_sha256": "7e5e76a5501f536765295c364908f892e42e4f29a08a4a81b646478f7313f048",
+      "counts": {
+        "train": {
+          "fist": 570,
+          "open_palm": 570,
+          "peace": 570,
+          "thumbs_up": 570
+        },
+        "val": {
+          "fist": 100,
+          "open_palm": 100,
+          "peace": 100,
+          "thumbs_up": 100
+        },
+        "test": {
+          "fist": 100,
+          "open_palm": 100,
+          "peace": 100,
+          "thumbs_up": 100
+        }
+      },
+      "user_counts": {
+        "train": 1866,
+        "val": 218,
+        "test": 292
+      },
+      "known_user_sets_disjoint": true,
+      "users_disjoint": true,
+      "full_subject_independence_verified": true,
+      "original_train_sources_without_user_id": [],
+      "all_original_participants_excluded": true,
+      "source_ids_disjoint": true,
+      "crop_hashes_verified": 3080,
+      "original_holdouts_excluded_from_manifest": true,
+      "upstream_metadata": {
+        "ready": true,
+        "seed": 42,
+        "counts": {
+          "train": {
+            "fist": 570,
+            "open_palm": 570,
+            "peace": 570,
+            "thumbs_up": 570
+          },
+          "val": {
+            "fist": 100,
+            "open_palm": 100,
+            "peace": 100,
+            "thumbs_up": 100
+          },
+          "test": {
+            "fist": 100,
+            "open_palm": 100,
+            "peace": 100,
+            "thumbs_up": 100
+          }
+        },
+        "additional_counts": {
+          "train": {
+            "fist": 500,
+            "open_palm": 500,
+            "peace": 500,
+            "thumbs_up": 500
+          },
+          "val": {
+            "fist": 100,
+            "open_palm": 100,
+            "peace": 100,
+            "thumbs_up": 100
+          },
+          "test": {
+            "fist": 100,
+            "open_palm": 100,
+            "peace": 100,
+            "thumbs_up": 100
+          }
+        },
+        "original_images": 400,
+        "original_annotations_matched": 400,
+        "original_unresolved_source_ids": [],
+        "excluded_original_participants": 400,
+        "unresolved_original_source_ids": [],
+        "original_split_participant_overlaps": {
+          "train_val": 0,
+          "train_test": 0,
+          "val_test": 0
+        },
+        "all_original_participants_excluded": true,
+        "additional_participants_disjoint": true,
+        "original_val_test_preserved": true,
+        "additional_unique_participants": {
+          "train": 1586,
+          "val": 218,
+          "test": 292
+        },
+        "exact_source_overlap": 0,
+        "crop_hash_duplicates": 0,
+        "original_holdout_perceptual_candidates_retained": 0,
+        "new_cross_split_perceptual_candidates": [],
+        "rejected": {
+          "failed_ValueError": 110,
+          "new_cross_split_perceptual_candidate": 16,
+          "holdout_perceptual_candidate": 1
+        },
+        "perceptual_overlap_review_complete": true,
+        "download_bytes_this_run": 3148976183,
+        "download_budget_bytes": 8589934592,
+        "elapsed_seconds": 752.9679999999998,
+        "crop_policy": "matching official hand bbox;15% each-side margin; gray128 letterbox320 RGB; no training augmentation saved",
+        "source": "https://github.com/hukenovs/hagrid",
+        "annotations_url": "https://rndml-team-cv.obs.ru-moscow-1.hc.sbercloud.ru/datasets/hagrid_v2/annotations_with_landmarks/annotations.zip",
+        "peace_semantics": "Logicalpeace includes75% officialpeace and25% officialpeace_inverted in additional splits; sourcegesture retained perrecord",
+        "license_url": "https://github.com/hukenovs/hagrid/tree/master/license",
+        "cached_license": "data/hagrid_cache/HaGRID_license_en_us.pdf",
+        "cached_license_sha256": "14f4845e9c8d3de875cbac4139491da368ab1040a7f565e02894477279134d22",
+        "license_note": "HaGRID custom public license with attribution/conditions, derived from Attribution-ShareAlike4.0; license explicitly says it is not a Creative Commons license. Official terms cached locally; original participant consent not independently verified.",
+        "split_policy": "Original70/class train retained; original val/test immutable and not in new manifest; extra official subject-disjoint splits; exclude recovered original participants; one candidate/user/upstreamgesture",
+        "limitations": "Original subject exclusion is verified only for matched source IDs; perceptual hashes are screening, not proof against semantic near-duplicates."
+      }
+    },
+    "first_backbone_conv_weight_l2_change": 0.029110871255397797,
+    "legacy_checkpoint_sha256": {
+      "mobilenetv4.pt": "f759b9ea8be49117dcd958db62359b5cc2eac16aeec442bf2265af4054433d2f",
+      "mobilenetv4_noaug.pt": "3b8c97278384a74b7b5be118c55d3675b815fd7e018ba147cc291c3a650f8d38",
+      "resnet18.pt": "b7350ba08e13105b81ab39ad8a86e61d6160b1fbbd22d9cf78ae67267f3e7b1f",
+      "simple_cnn.pt": "705f864889a1d15cf804e65b22e874723b2eed8ec6b6c3e1cd92e5f0c64839b4"
+    },
+    "environment": {
+      "python": "3.10.9",
+      "torch": "2.6.0+cu124",
+      "device": "cuda",
+      "gpu": "NVIDIA GeForce GTX 1660 Ti",
+      "cuda": "12.4",
+      "amp": true,
+      "precision_policy": "ResNet CUDA AMP; MobileNet CUDA float32 after observed nonfinite fp16 gradients on GTX1660Ti",
+      "peak_cuda_memory_bytes": 449586176,
+      "cpu": "Intel64 Family 6 Model 158 Stepping 11, GenuineIntel",
+      "cpu_threads": 2,
+      "platform": "Windows-10-10.0.19045-SP0"
+    },
+    "source_dataset_license": "See expansion audit/upstream provenance; original consent remains unverified",
+    "normalization_policy": "RGB gray128 letterbox; per-model metadata normalization; identical train/serving"
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "stage": "head",
+      "stage_epoch": 1,
+      "train_loss": 0.6993906857674582,
+      "val_loss": 0.3022747993469238,
+      "train_accuracy": 0.762280701754386,
+      "val_accuracy": 0.95,
+      "seconds": 43.35516420000022
+    },
+    {
+      "epoch": 2,
+      "stage": "head",
+      "stage_epoch": 2,
+      "train_loss": 0.2767374697484468,
+      "val_loss": 0.17946325302124022,
+      "train_accuracy": 0.9381578947368421,
+      "val_accuracy": 0.97,
+      "seconds": 41.7390175999999
+    },
+    {
+      "epoch": 3,
+      "stage": "finetune",
+      "stage_epoch": 1,
+      "train_loss": 0.21066202369698306,
+      "val_loss": 0.032824346721172334,
+      "train_accuracy": 0.9394736842105263,
+      "val_accuracy": 0.995,
+      "seconds": 62.82828109999991
+    },
+    {
+      "epoch": 4,
+      "stage": "finetune",
+      "stage_epoch": 2,
+      "train_loss": 0.07272032959419385,
+      "val_loss": 0.016363815367221833,
+      "train_accuracy": 0.9767543859649123,
+      "val_accuracy": 0.9925,
+      "seconds": 62.7590167999997
+    },
+    {
+      "epoch": 5,
+      "stage": "finetune",
+      "stage_epoch": 3,
+      "train_loss": 0.03591080161563137,
+      "val_loss": 0.008133541047573089,
+      "train_accuracy": 0.9859649122807017,
+      "val_accuracy": 0.9975,
+      "seconds": 63.11852200000067
+    },
+    {
+      "epoch": 6,
+      "stage": "finetune",
+      "stage_epoch": 4,
+      "train_loss": 0.026943521698315938,
+      "val_loss": 0.007452691793441772,
+      "train_accuracy": 0.9921052631578947,
+      "val_accuracy": 0.9975,
+      "seconds": 63.055149800000436
+    },
+    {
+      "epoch": 7,
+      "stage": "finetune",
+      "stage_epoch": 5,
+      "train_loss": 0.02785199430950901,
+      "val_loss": 0.0045173799991607665,
+      "train_accuracy": 0.9907894736842106,
+      "val_accuracy": 1.0,
+      "seconds": 62.79543420000027
+    },
+    {
+      "epoch": 8,
+      "stage": "finetune",
+      "stage_epoch": 6,
+      "train_loss": 0.012649945365755182,
+      "val_loss": 0.0041135305166244505,
+      "train_accuracy": 0.9960526315789474,
+      "val_accuracy": 1.0,
+      "seconds": 63.19644200000039
+    },
+    {
+      "epoch": 9,
+      "stage": "finetune",
+      "stage_epoch": 7,
+      "train_loss": 0.010898947454335397,
+      "val_loss": 0.002438042163848877,
+      "train_accuracy": 0.9960526315789474,
+      "val_accuracy": 1.0,
+      "seconds": 63.1592555999996
+    },
+    {
+      "epoch": 10,
+      "stage": "finetune",
+      "stage_epoch": 8,
+      "train_loss": 0.008579096250366746,
+      "val_loss": 0.002527375519275665,
+      "train_accuracy": 0.9986842105263158,
+      "val_accuracy": 1.0,
+      "seconds": 63.222332899999856
+    }
+  ],
+  "metrics": {
+    "accuracy": 1.0,
+    "precision_macro": 1.0,
+    "recall_macro": 1.0,
+    "f1_macro": 1.0,
+    "per_class": {
+      "fist": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 15.0
+      },
+      "open_palm": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 15.0
+      },
+      "peace": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 15.0
+      },
+      "thumbs_up": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 15.0
+      }
+    },
+    "sample_count": 60,
+    "accuracy_wilson_95": [
+      0.93982814785791,
+      0.9999999999999998
+    ],
+    "interval_caveat": "Image-level Wilson interval assumes independent errors. Official user IDs verify between-split participant exclusion; repeated images within an expanded-set participant may remain correlated."
+  },
+  "confusion_matrix": [
+    [
+      15,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      15,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      15,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      15
+    ]
+  ],
+  "original_test": {
+    "metrics": {
+      "accuracy": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "f1_macro": 1.0,
+      "per_class": {
+        "fist": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15.0
+        },
+        "open_palm": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15.0
+        },
+        "peace": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15.0
+        },
+        "thumbs_up": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15.0
+        }
+      },
+      "sample_count": 60,
+      "accuracy_wilson_95": [
+        0.93982814785791,
+        0.9999999999999998
+      ],
+      "interval_caveat": "Image-level Wilson interval assumes independent errors. Official user IDs verify between-split participant exclusion; repeated images within an expanded-set participant may remain correlated."
+    },
+    "confusion_matrix": [
+      [
+        15,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        15,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        15,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        15
+      ]
+    ],
+    "protocol": "Unaugmented held-out samples, after expanded-validation checkpoint selection"
+  },
+  "expanded_test": {
+    "metrics": {
+      "accuracy": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "f1_macro": 1.0,
+      "per_class": {
+        "fist": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 100.0
+        },
+        "open_palm": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 100.0
+        },
+        "peace": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 100.0
+        },
+        "thumbs_up": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 100.0
+        }
+      },
+      "sample_count": 400,
+      "accuracy_wilson_95": [
+        0.9904877056657034,
+        0.9999999999999999
+      ],
+      "interval_caveat": "Image-level Wilson interval assumes independent errors. Official user IDs verify between-split participant exclusion; repeated images within an expanded-set participant may remain correlated."
+    },
+    "confusion_matrix": [
+      [
+        100,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        100,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        100,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        100
+      ]
+    ],
+    "protocol": "Unaugmented held-out samples, after expanded-validation checkpoint selection"
+  },
+  "latency": {
+    "mean_ms": 41.94263000003957,
+    "p50_ms": 41.04295000024649,
+    "p95_ms": 47.35460999977477,
+    "device": "cpu",
+    "repeats": 20,
+    "warmup": 3,
+    "scope": "single-image forward only; preprocessing/network/explanation excluded",
+    "cpu": "Intel64 Family 6 Model 158 Stepping 11, GenuineIntel",
+    "torch_threads": 2,
+    "raw_ms": [
+      41.817299999820534,
+      40.873500000088825,
+      40.810799999235314,
+      41.81740000058198,
+      39.82480000013311,
+      41.25489999933052,
+      41.15860000001703,
+      40.10930000004009,
+      41.45940000034898,
+      39.57869999976538,
+      39.939599999343045,
+      40.669299999535724,
+      40.92730000047595,
+      42.40460000073654,
+      41.27680000055989,
+      40.51560000061727,
+      41.342599999552476,
+      40.14210000059393,
+      46.897899999748915,
+      56.03210000026593
+    ]
+  },
+  "stress": {
+    "dim_brightness_0.5": {
+      "accuracy": 0.9833333333333333,
+      "precision_macro": 0.984375,
+      "recall_macro": 0.9833333333333334,
+      "f1_macro": 0.9833147942157954,
+      "per_class": {
+        "fist": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15.0
+        },
+        "open_palm": {
+          "precision": 0.9375,
+          "recall": 1.0,
+          "f1-score": 0.967741935483871,
+          "support": 15.0
+        },
+        "peace": {
+          "precision": 1.0,
+          "recall": 0.9333333333333333,
+          "f1-score": 0.9655172413793104,
+          "support": 15.0
+        },
+        "thumbs_up": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15.0
+        }
+      },
+      "sample_count": 60,
+      "accuracy_wilson_95": [
+        0.9114487027240993,
+        0.9970518402052136
+      ],
+      "interval_caveat": "Binomial interval assumes independent samples; subject/session independence unverified"
+    },
+    "gaussian_blur_radius_2": {
+      "accuracy": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "f1_macro": 1.0,
+      "per_class": {
+        "fist": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15.0
+        },
+        "open_palm": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15.0
+        },
+        "peace": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15.0
+        },
+        "thumbs_up": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15.0
+        }
+      },
+      "sample_count": 60,
+      "accuracy_wilson_95": [
+        0.93982814785791,
+        0.9999999999999998
+      ],
+      "interval_caveat": "Binomial interval assumes independent samples; subject/session independence unverified"
+    },
+    "jpeg_quality_30": {
+      "accuracy": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "f1_macro": 1.0,
+      "per_class": {
+        "fist": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15.0
+        },
+        "open_palm": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15.0
+        },
+        "peace": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15.0
+        },
+        "thumbs_up": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15.0
+        }
+      },
+      "sample_count": 60,
+      "accuracy_wilson_95": [
+        0.93982814785791,
+        0.9999999999999998
+      ],
+      "interval_caveat": "Binomial interval assumes independent samples; subject/session independence unverified"
+    }
+  },
+  "checkpoint_sha256": "d912da8e800701ec70fbf1f7330ca40593fe4f84fafa5d4f8a9730d7d6e3e26e",
+  "gradcam_verification": {
+    "passed": true,
+    "real_gradients": true,
+    "input_sensitive": true,
+    "samples": [
+      {
+        "source_id": "05b80c34-0237-42ba-818a-189922e3b328",
+        "predicted": "fist",
+        "probabilities": [
+          0.9997774958610535,
+          0.00022075662855058908,
+          9.97621896203782e-07,
+          8.223818213082268e-07
+        ],
+        "cam_shape": [
+          1,
+          7,
+          7
+        ],
+        "cam_min": 0.0,
+        "cam_max": 0.30597972869873047
+      },
+      {
+        "source_id": "00f6ef65-28ac-46d8-b3e6-97a37210d576",
+        "predicted": "open_palm",
+        "probabilities": [
+          5.596758683168446e-07,
+          0.9999946355819702,
+          4.822511527891038e-06,
+          9.84930448311161e-09
+        ],
+        "cam_shape": [
+          1,
+          7,
+          7
+        ],
+        "cam_min": 0.0,
+        "cam_max": 0.48283591866493225
+      }
+    ]
+  },
+  "test_protocol": "Original60 and independent expanded test evaluated once after expanded-validation selection; stress separate",
+  "comparison_caveat": "New data and full-backbone optimization both changed; not a single-factor ablation. Original60 was examined in the earlier phase; fresh expansion test is the new independent holdout."
+}

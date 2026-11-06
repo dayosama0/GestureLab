@@ -1,0 +1,378 @@
+{
+  "run_id": "resnet18",
+  "model_id": "resnet18",
+  "metadata": {
+    "model_id": "resnet18",
+    "classes": [
+      "fist",
+      "open_palm",
+      "peace",
+      "thumbs_up"
+    ],
+    "trained": true,
+    "input_size": 224,
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "seed": 42,
+    "augmentation": "moderate_4_fixed_variants_plus_original",
+    "pretrained_source": "torchvision ResNet18_Weights.IMAGENET1K_V1",
+    "backbone_frozen": true,
+    "best_epoch": 15,
+    "pretrained_weights_loaded": true,
+    "pretrained_config": {},
+    "source_dataset_license": "Not supplied; do not redistribute private source photos",
+    "best_val_loss": 0.12204372609655062,
+    "epoch_budget": 15,
+    "patience": 5,
+    "actual_epochs": 15,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "checkpoint_selection": "minimum validation cross-entropy",
+    "trained_at": "2026-10-30T05:45:19.673151+00:00",
+    "training_seconds": 85.50670209999953,
+    "normalization_policy": "ImageNet; 224 RGB gray-128 letterbox, user-selected hand ROI",
+    "pretrained_native_input_size": 224,
+    "adaptation": "A1 architecture reproduction",
+    "dataset_audit_sha256": "c973a36c77466e2ef4a362af0e7b9cb0437e5f822047d7131d2e49b225155dfc",
+    "environment": {
+      "python": "3.10.9",
+      "torch": "2.14.1+cpu",
+      "platform": "Windows-10-10.0.19045-SP0",
+      "processor": "Intel64 Family 6 Model 158 Stepping 11, GenuineIntel",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.0007170476232257,
+      "val_loss": 0.5909131248792012,
+      "train_accuracy": 0.6292857142857143,
+      "val_accuracy": 0.9
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.44372772216796874,
+      "val_loss": 0.36973912914594015,
+      "train_accuracy": 0.9185714285714286,
+      "val_accuracy": 0.95
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.3029010867221015,
+      "val_loss": 0.29570252895355226,
+      "train_accuracy": 0.9471428571428572,
+      "val_accuracy": 0.95
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.23218175513403758,
+      "val_loss": 0.23720133900642396,
+      "train_accuracy": 0.9671428571428572,
+      "val_accuracy": 0.95
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.1788381828580584,
+      "val_loss": 0.21645942330360413,
+      "train_accuracy": 0.9692857142857143,
+      "val_accuracy": 0.9666666666666667
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.15604823359421321,
+      "val_loss": 0.19786881655454636,
+      "train_accuracy": 0.9771428571428571,
+      "val_accuracy": 0.9666666666666667
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.13357965788670947,
+      "val_loss": 0.16995202600955964,
+      "train_accuracy": 0.9778571428571429,
+      "val_accuracy": 0.9666666666666667
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.11613996420587812,
+      "val_loss": 0.16175305893023809,
+      "train_accuracy": 0.9878571428571429,
+      "val_accuracy": 0.9666666666666667
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.10941177649157388,
+      "val_loss": 0.1469067394733429,
+      "train_accuracy": 0.9835714285714285,
+      "val_accuracy": 0.9666666666666667
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.0997423065985952,
+      "val_loss": 0.14869539911548296,
+      "train_accuracy": 0.9821428571428571,
+      "val_accuracy": 0.9666666666666667
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.09226453546966826,
+      "val_loss": 0.15583404377102852,
+      "train_accuracy": 0.985,
+      "val_accuracy": 0.9666666666666667
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.08371717014483043,
+      "val_loss": 0.13713151291012765,
+      "train_accuracy": 0.9892857142857143,
+      "val_accuracy": 0.9666666666666667
+    },
+    {
+      "epoch": 13,
+      "train_loss": 0.07827597205127988,
+      "val_loss": 0.1327815406024456,
+      "train_accuracy": 0.9928571428571429,
+      "val_accuracy": 0.9666666666666667
+    },
+    {
+      "epoch": 14,
+      "train_loss": 0.07550461675439563,
+      "val_loss": 0.12502494653065999,
+      "train_accuracy": 0.985,
+      "val_accuracy": 0.9666666666666667
+    },
+    {
+      "epoch": 15,
+      "train_loss": 0.0648816426736968,
+      "val_loss": 0.12204372609655062,
+      "train_accuracy": 0.9935714285714285,
+      "val_accuracy": 0.9666666666666667
+    }
+  ],
+  "metrics": {
+    "accuracy": 0.9666666666666667,
+    "precision_macro": 0.9677083333333334,
+    "recall_macro": 0.9666666666666667,
+    "f1_macro": 0.9666481275491287,
+    "per_class": {
+      "fist": {
+        "precision": 0.9375,
+        "recall": 1.0,
+        "f1-score": 0.967741935483871,
+        "support": 15.0
+      },
+      "open_palm": {
+        "precision": 0.9333333333333333,
+        "recall": 0.9333333333333333,
+        "f1-score": 0.9333333333333333,
+        "support": 15.0
+      },
+      "peace": {
+        "precision": 1.0,
+        "recall": 0.9333333333333333,
+        "f1-score": 0.9655172413793104,
+        "support": 15.0
+      },
+      "thumbs_up": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 15.0
+      }
+    },
+    "sample_count": 60,
+    "accuracy_wilson_95": [
+      0.886362257256914,
+      0.9908106807438021
+    ],
+    "interval_caveat": "Binomial interval assumes independent samples; subject/session independence unverified"
+  },
+  "confusion_matrix": [
+    [
+      15,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      14,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      14,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      15
+    ]
+  ],
+  "latency": {
+    "mean_ms": 48.60769000042637,
+    "p50_ms": 46.78860000058194,
+    "p95_ms": 55.587049999667215,
+    "device": "cpu",
+    "repeats": 20,
+    "warmup": 3,
+    "scope": "single-image forward only; preprocessing/network/explanation excluded",
+    "cpu": "Intel64 Family 6 Model 158 Stepping 11, GenuineIntel",
+    "torch_threads": 2,
+    "raw_ms": [
+      46.31619999418035,
+      45.35020000184886,
+      49.49549999582814,
+      46.00370000116527,
+      46.259599999757484,
+      46.7860999997356,
+      47.207800002070144,
+      46.77060000540223,
+      46.57469999801833,
+      46.791100001428276,
+      51.30230000213487,
+      46.55510000156937,
+      51.48410000401782,
+      55.556999999680556,
+      44.932900003914256,
+      45.66479999630246,
+      52.55760000000009,
+      51.75900000176625,
+      56.15799999941373,
+      48.62750000029337
+    ]
+  },
+  "stress": {
+    "dim_brightness_0.5": {
+      "accuracy": 0.9666666666666667,
+      "precision_macro": 0.9677083333333334,
+      "recall_macro": 0.9666666666666667,
+      "f1_macro": 0.9666481275491287,
+      "per_class": {
+        "fist": {
+          "precision": 0.9375,
+          "recall": 1.0,
+          "f1-score": 0.967741935483871,
+          "support": 15.0
+        },
+        "open_palm": {
+          "precision": 0.9333333333333333,
+          "recall": 0.9333333333333333,
+          "f1-score": 0.9333333333333333,
+          "support": 15.0
+        },
+        "peace": {
+          "precision": 1.0,
+          "recall": 0.9333333333333333,
+          "f1-score": 0.9655172413793104,
+          "support": 15.0
+        },
+        "thumbs_up": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15.0
+        }
+      },
+      "sample_count": 60,
+      "accuracy_wilson_95": [
+        0.886362257256914,
+        0.9908106807438021
+      ],
+      "interval_caveat": "Binomial interval assumes independent samples; subject/session independence unverified"
+    },
+    "gaussian_blur_radius_2": {
+      "accuracy": 0.9,
+      "precision_macro": 0.8995535714285714,
+      "recall_macro": 0.9,
+      "f1_macro": 0.8987764182424917,
+      "per_class": {
+        "fist": {
+          "precision": 0.8571428571428571,
+          "recall": 0.8,
+          "f1-score": 0.8275862068965517,
+          "support": 15.0
+        },
+        "open_palm": {
+          "precision": 0.9285714285714286,
+          "recall": 0.8666666666666667,
+          "f1-score": 0.896551724137931,
+          "support": 15.0
+        },
+        "peace": {
+          "precision": 0.875,
+          "recall": 0.9333333333333333,
+          "f1-score": 0.9032258064516129,
+          "support": 15.0
+        },
+        "thumbs_up": {
+          "precision": 0.9375,
+          "recall": 1.0,
+          "f1-score": 0.967741935483871,
+          "support": 15.0
+        }
+      },
+      "sample_count": 60,
+      "accuracy_wilson_95": [
+        0.7985053527602123,
+        0.9533571655261158
+      ],
+      "interval_caveat": "Binomial interval assumes independent samples; subject/session independence unverified"
+    },
+    "jpeg_quality_30": {
+      "accuracy": 0.9833333333333333,
+      "precision_macro": 0.984375,
+      "recall_macro": 0.9833333333333334,
+      "f1_macro": 0.9833147942157954,
+      "per_class": {
+        "fist": {
+          "precision": 1.0,
+          "recall": 0.9333333333333333,
+          "f1-score": 0.9655172413793104,
+          "support": 15.0
+        },
+        "open_palm": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15.0
+        },
+        "peace": {
+          "precision": 0.9375,
+          "recall": 1.0,
+          "f1-score": 0.967741935483871,
+          "support": 15.0
+        },
+        "thumbs_up": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15.0
+        }
+      },
+      "sample_count": 60,
+      "accuracy_wilson_95": [
+        0.9114487027240993,
+        0.9970518402052136
+      ],
+      "interval_caveat": "Binomial interval assumes independent samples; subject/session independence unverified"
+    }
+  },
+  "checkpoint_sha256": "b7350ba08e13105b81ab39ad8a86e61d6160b1fbbd22d9cf78ae67267f3e7b1f",
+  "test_protocol": "Unaugmented source test, evaluated after validation selection; stress separate",
+  "uncertainty": "60 test images, 15/class; subject/session independence unverified"
+}

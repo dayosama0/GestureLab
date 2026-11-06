@@ -1,0 +1,43 @@
+{
+  "checkpoint_sha256": "d912da8e800701ec70fbf1f7330ca40593fe4f84fafa5d4f8a9730d7d6e3e26e",
+  "passed": true,
+  "real_gradients": true,
+  "input_sensitive": true,
+  "samples": [
+    {
+      "source_id": "05b80c34-0237-42ba-818a-189922e3b328",
+      "predicted": "fist",
+      "probabilities": [
+        0.9997774958610535,
+        0.00022075662855058908,
+        9.97621896203782e-07,
+        8.223818213082268e-07
+      ],
+      "cam_shape": [
+        1,
+        7,
+        7
+      ],
+      "cam_min": 0.0,
+      "cam_max": 0.30597972869873047
+    },
+    {
+      "source_id": "00f6ef65-28ac-46d8-b3e6-97a37210d576",
+      "predicted": "open_palm",
+      "probabilities": [
+        5.596758683168446e-07,
+        0.9999946355819702,
+        4.822511527891038e-06,
+        9.84930448311161e-09
+      ],
+      "cam_shape": [
+        1,
+        7,
+        7
+      ],
+      "cam_min": 0.0,
+      "cam_max": 0.48283591866493225
+    }
+  ],
+  "legacy_checkpoints_unchanged": true
+}

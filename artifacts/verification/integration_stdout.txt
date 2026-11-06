@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "models": 3,
+  "predictions": 6,
+  "runs": 4,
+  "evidence": "C:\\Users\\Ali\\Downloads\\gesturelab\\artifacts\\verification\\integration.json"
+}

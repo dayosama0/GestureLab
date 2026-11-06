@@ -1,0 +1,83 @@
+[
+  {
+    "model_id": "simple_cnn",
+    "parameters": 155524,
+    "trainable_parameters": 155524,
+    "gradcam_layer": "features.6",
+    "gradcam_feature_shape": [
+      1,
+      64,
+      28,
+      28
+    ],
+    "pretrained_config": {},
+    "purpose": "Architecture inspection only, not inference or measured predictive performance"
+  },
+  {
+    "model_id": "resnet18",
+    "parameters": 11178564,
+    "trainable_parameters": 2052,
+    "gradcam_layer": "backbone.layer4.1.conv2",
+    "gradcam_feature_shape": [
+      1,
+      512,
+      7,
+      7
+    ],
+    "pretrained_config": {},
+    "purpose": "Architecture inspection only, not inference or measured predictive performance"
+  },
+  {
+    "model_id": "mobilenetv4",
+    "parameters": 2498148,
+    "trainable_parameters": 5124,
+    "gradcam_layer": "backbone.blocks.4",
+    "gradcam_feature_shape": [
+      1,
+      960,
+      7,
+      7
+    ],
+    "pretrained_config": {
+      "url": "",
+      "hf_hub_id": "timm/mobilenetv4_conv_small.e3600_r256_in1k",
+      "architecture": "mobilenetv4_conv_small",
+      "tag": "e3600_r256_in1k",
+      "custom_load": false,
+      "input_size": [
+        3,
+        256,
+        256
+      ],
+      "test_input_size": [
+        3,
+        320,
+        320
+      ],
+      "fixed_input_size": false,
+      "interpolation": "bicubic",
+      "crop_pct": 0.95,
+      "test_crop_pct": 1.0,
+      "crop_mode": "center",
+      "mean": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "std": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "num_classes": 1000,
+      "pool_size": [
+        8,
+        8
+      ],
+      "first_conv": "conv_stem",
+      "classifier": "classifier",
+      "license": "apache-2.0"
+    },
+    "purpose": "Architecture inspection only, not inference or measured predictive performance"
+  }
+]

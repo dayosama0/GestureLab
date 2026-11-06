@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "viewports": [
+    1440,
+    360
+  ],
+  "main_probabilities": 4,
+  "main_timing_fields": 2,
+  "details_collapsed_by_default": true,
+  "details_open_reveals": [
+    "API roundtrip",
+    "preprocessing256",
+    "checkpoint"
+  ],
+  "no_mobile_page_overflow": true,
+  "screenshots": "Output panel and About only; no hand image included"
+}

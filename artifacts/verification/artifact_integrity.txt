@@ -1,0 +1,4 @@
+simple_cnn PASS artifact hash,60 predictions,4x15 rows,exact accuracy 0.95
+resnet18 PASS artifact hash,60 predictions,4x15 rows,exact accuracy 0.9666666666666667
+mobilenetv4_noaug PASS artifact hash,60 predictions,4x15 rows,exact accuracy 0.9166666666666666
+mobilenetv4 PASS artifact hash,60 predictions,4x15 rows,exact accuracy 0.9333333333333333

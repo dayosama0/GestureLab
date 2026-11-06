@@ -1,0 +1,21 @@
+PASS 3080 unique crop records/source IDs/hashes; train/val/test users disjoint; 400 original upstream users recovered and excluded from new samples; 13 original artifact SHA256s unchanged.
+{
+  "train": {
+    "fist": 570,
+    "open_palm": 570,
+    "peace": 570,
+    "thumbs_up": 570
+  },
+  "val": {
+    "fist": 100,
+    "open_palm": 100,
+    "peace": 100,
+    "thumbs_up": 100
+  },
+  "test": {
+    "fist": 100,
+    "open_palm": 100,
+    "peace": 100,
+    "thumbs_up": 100
+  }
+}

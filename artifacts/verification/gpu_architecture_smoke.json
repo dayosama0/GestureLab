@@ -1,0 +1,25 @@
+{
+  "scope": "Synthetic-batch compatibility with actual pretrained initialization only; no task metrics or checkpoint exported",
+  "torch": "2.6.0+cu124",
+  "gpu": "NVIDIA GeForce GTX 1660 Ti",
+  "models": [
+    {
+      "model_id": "resnet18_finetuned",
+      "input_size": 224,
+      "batch_size": 16,
+      "amp_enabled": true,
+      "finite_backward": true,
+      "backbone_updated": true,
+      "peak_memory_bytes": 356240896
+    },
+    {
+      "model_id": "mobilenetv4_finetuned",
+      "input_size": 256,
+      "batch_size": 16,
+      "amp_enabled": false,
+      "finite_backward": true,
+      "backbone_updated": true,
+      "peak_memory_bytes": 433907200
+    }
+  ]
+}

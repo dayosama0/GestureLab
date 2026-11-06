@@ -1,0 +1,57 @@
+{
+  "time": "2026-10-30T05:46:42.962Z",
+  "checks": [
+    {
+      "name": "empty Studio requires source image",
+      "status": "PASS"
+    },
+    {
+      "name": "real upload prediction and Grad-CAM",
+      "status": "PASS",
+      "detail": {
+        "model_id": "mobilenetv4",
+        "label": "fist",
+        "version": "f759b9ea8be49117dcd958db62359b5cc2eac16aeec442bf2265af4054433d2f"
+      }
+    },
+    {
+      "name": "same-image model comparison",
+      "status": "PASS",
+      "detail": {
+        "models": [
+          "simple_cnn",
+          "resnet18",
+          "mobilenetv4"
+        ]
+      }
+    },
+    {
+      "name": "factual experiment rows",
+      "status": "PASS",
+      "detail": {
+        "runs": [
+          "simple_cnn",
+          "resnet18",
+          "mobilenetv4",
+          "mobilenetv4_noaug"
+        ]
+      }
+    },
+    {
+      "name": "360px responsive navigation and no page overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "no uncaught browser runtime errors",
+      "status": "PASS"
+    },
+    {
+      "name": "missing checkpoints disable prediction (browser-only fixture)",
+      "status": "PASS"
+    },
+    {
+      "name": "camera denial handled (browser-only rejection)",
+      "status": "PASS"
+    }
+  ]
+}

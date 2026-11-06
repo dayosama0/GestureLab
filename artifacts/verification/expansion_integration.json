@@ -1,0 +1,1114 @@
+{
+  "health": {
+    "status": "ready",
+    "device": "cpu",
+    "ready": true,
+    "models": [
+      {
+        "id": "simple_cnn",
+        "name": "A1 SimpleCNN",
+        "available": true,
+        "reason": null,
+        "version": "705f864889a1d15cf804e65b22e874723b2eed8ec6b6c3e1cd92e5f0c64839b4",
+        "metadata": {
+          "model_id": "simple_cnn",
+          "classes": [
+            "fist",
+            "open_palm",
+            "peace",
+            "thumbs_up"
+          ],
+          "trained": true,
+          "input_size": 224,
+          "mean": [
+            0.485,
+            0.456,
+            0.406
+          ],
+          "std": [
+            0.229,
+            0.224,
+            0.225
+          ],
+          "seed": 42,
+          "augmentation": "moderate_4_fixed_variants_plus_original",
+          "pretrained_source": "random initialization; trained from scratch",
+          "backbone_frozen": false,
+          "best_epoch": 7,
+          "pretrained_weights_loaded": false,
+          "pretrained_config": {},
+          "source_dataset_license": "Not supplied; do not redistribute private source photos",
+          "best_val_loss": 0.1208518773317337,
+          "epoch_budget": 15,
+          "patience": 5,
+          "actual_epochs": 12,
+          "batch_size": 32,
+          "learning_rate": 0.001,
+          "weight_decay": 0.0001,
+          "checkpoint_selection": "minimum validation cross-entropy",
+          "trained_at": "2026-10-30T05:43:52.214403+00:00",
+          "training_seconds": 157.6986631000036,
+          "normalization_policy": "ImageNet; 224 RGB gray-128 letterbox, user-selected hand ROI",
+          "pretrained_native_input_size": 224,
+          "adaptation": "A1 architecture reproduction",
+          "dataset_audit_sha256": "c973a36c77466e2ef4a362af0e7b9cb0437e5f822047d7131d2e49b225155dfc",
+          "environment": {
+            "python": "3.10.9",
+            "torch": "2.14.1+cpu",
+            "platform": "Windows-10-10.0.19045-SP0",
+            "processor": "Intel64 Family 6 Model 158 Stepping 11, GenuineIntel",
+            "device": "cpu",
+            "threads": 2
+          }
+        }
+      },
+      {
+        "id": "resnet18",
+        "name": "A1 ResNet18",
+        "available": true,
+        "reason": null,
+        "version": "b7350ba08e13105b81ab39ad8a86e61d6160b1fbbd22d9cf78ae67267f3e7b1f",
+        "metadata": {
+          "model_id": "resnet18",
+          "classes": [
+            "fist",
+            "open_palm",
+            "peace",
+            "thumbs_up"
+          ],
+          "trained": true,
+          "input_size": 224,
+          "mean": [
+            0.485,
+            0.456,
+            0.406
+          ],
+          "std": [
+            0.229,
+            0.224,
+            0.225
+          ],
+          "seed": 42,
+          "augmentation": "moderate_4_fixed_variants_plus_original",
+          "pretrained_source": "torchvision ResNet18_Weights.IMAGENET1K_V1",
+          "backbone_frozen": true,
+          "best_epoch": 15,
+          "pretrained_weights_loaded": true,
+          "pretrained_config": {},
+          "source_dataset_license": "Not supplied; do not redistribute private source photos",
+          "best_val_loss": 0.12204372609655062,
+          "epoch_budget": 15,
+          "patience": 5,
+          "actual_epochs": 15,
+          "batch_size": 32,
+          "learning_rate": 0.001,
+          "weight_decay": 0.0001,
+          "checkpoint_selection": "minimum validation cross-entropy",
+          "trained_at": "2026-10-30T05:45:19.673151+00:00",
+          "training_seconds": 85.50670209999953,
+          "normalization_policy": "ImageNet; 224 RGB gray-128 letterbox, user-selected hand ROI",
+          "pretrained_native_input_size": 224,
+          "adaptation": "A1 architecture reproduction",
+          "dataset_audit_sha256": "c973a36c77466e2ef4a362af0e7b9cb0437e5f822047d7131d2e49b225155dfc",
+          "environment": {
+            "python": "3.10.9",
+            "torch": "2.14.1+cpu",
+            "platform": "Windows-10-10.0.19045-SP0",
+            "processor": "Intel64 Family 6 Model 158 Stepping 11, GenuineIntel",
+            "device": "cpu",
+            "threads": 2
+          }
+        }
+      },
+      {
+        "id": "mobilenetv4",
+        "name": "MobileNetV4 Conv Small",
+        "available": true,
+        "reason": null,
+        "version": "f759b9ea8be49117dcd958db62359b5cc2eac16aeec442bf2265af4054433d2f",
+        "metadata": {
+          "model_id": "mobilenetv4",
+          "classes": [
+            "fist",
+            "open_palm",
+            "peace",
+            "thumbs_up"
+          ],
+          "trained": true,
+          "input_size": 224,
+          "mean": [
+            0.485,
+            0.456,
+            0.406
+          ],
+          "std": [
+            0.229,
+            0.224,
+            0.225
+          ],
+          "seed": 42,
+          "augmentation": "moderate_4_fixed_variants_plus_original",
+          "pretrained_source": "timm/mobilenetv4_conv_small.e3600_r256_in1k",
+          "backbone_frozen": true,
+          "best_epoch": 12,
+          "pretrained_weights_loaded": true,
+          "pretrained_config": {
+            "architecture": "mobilenetv4_conv_small",
+            "hf_hub_id": "timm/mobilenetv4_conv_small.e3600_r256_in1k",
+            "url": "",
+            "input_size": [
+              3,
+              256,
+              256
+            ],
+            "mean": [
+              0.5,
+              0.5,
+              0.5
+            ],
+            "std": [
+              0.5,
+              0.5,
+              0.5
+            ]
+          },
+          "source_dataset_license": "Not supplied; do not redistribute private source photos",
+          "best_val_loss": 0.13225584775209426,
+          "epoch_budget": 15,
+          "patience": 5,
+          "actual_epochs": 15,
+          "batch_size": 32,
+          "learning_rate": 0.001,
+          "weight_decay": 0.0001,
+          "checkpoint_selection": "minimum validation cross-entropy",
+          "trained_at": "2026-10-30T05:46:12.463561+00:00",
+          "training_seconds": 21.507739499997115,
+          "normalization_policy": "ImageNet; 224 RGB gray-128 letterbox, user-selected hand ROI",
+          "pretrained_native_input_size": 256,
+          "adaptation": "MobileNetV4 native 256 weights evaluated at shared 224 ROI",
+          "dataset_audit_sha256": "c973a36c77466e2ef4a362af0e7b9cb0437e5f822047d7131d2e49b225155dfc",
+          "environment": {
+            "python": "3.10.9",
+            "torch": "2.14.1+cpu",
+            "platform": "Windows-10-10.0.19045-SP0",
+            "processor": "Intel64 Family 6 Model 158 Stepping 11, GenuineIntel",
+            "device": "cpu",
+            "threads": 2
+          }
+        }
+      },
+      {
+        "id": "resnet18_finetuned",
+        "name": "ResNet18 \u00b7 expanded-data fine-tuning",
+        "available": true,
+        "reason": null,
+        "version": "d912da8e800701ec70fbf1f7330ca40593fe4f84fafa5d4f8a9730d7d6e3e26e",
+        "metadata": {
+          "model_id": "resnet18_finetuned",
+          "classes": [
+            "fist",
+            "open_palm",
+            "peace",
+            "thumbs_up"
+          ],
+          "trained": true,
+          "input_size": 224,
+          "mean": [
+            0.485,
+            0.456,
+            0.406
+          ],
+          "std": [
+            0.229,
+            0.224,
+            0.225
+          ],
+          "seed": 42,
+          "pretrained_source": "torchvision ResNet18_Weights.IMAGENET1K_V1",
+          "pretrained_weights_loaded": true,
+          "initialization": "fresh original ImageNet pretrained backbone; new four-class head",
+          "pretrained_config": {},
+          "backbone_frozen": false,
+          "training_method": "2-stage head warmup then full-backbone gradient fine-tuning",
+          "finetuned_backbone_parameters": 11176512,
+          "augmentation": "train_only_on_the_fly_flip_affine_color_jitter; no synthetic media",
+          "best_epoch": 9,
+          "best_val_loss": 0.002438042163848877,
+          "actual_epochs": 10,
+          "head_epochs": 2,
+          "validation_metrics": {
+            "accuracy": 1.0,
+            "precision_macro": 1.0,
+            "recall_macro": 1.0,
+            "f1_macro": 1.0,
+            "per_class": {
+              "fist": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 100.0
+              },
+              "open_palm": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 100.0
+              },
+              "peace": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 100.0
+              },
+              "thumbs_up": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 100.0
+              }
+            },
+            "sample_count": 400,
+            "accuracy_wilson_95": [
+              0.9904877056657034,
+              0.9999999999999999
+            ],
+            "interval_caveat": "Official participant IDs are excluded across splits; image-level interval may understate within-user correlation."
+          },
+          "finetune_epoch_budget": 8,
+          "patience": 4,
+          "batch_size": 16,
+          "head_warmup_lr": 0.001,
+          "finetune_backbone_lr": 1e-05,
+          "finetune_head_lr": 0.0001,
+          "weight_decay": 0.0001,
+          "checkpoint_selection": "minimum new HaGRID validation cross-entropy; known-user-disjoint splits; only post-backbone-optimization checkpoints eligible",
+          "trained_at": "2026-11-06T21:56:12.286067+00:00",
+          "training_seconds": 606.3400140000003,
+          "train_count": 2280,
+          "validation_count": 400,
+          "expanded_test_count": 400,
+          "manifest_path": "data/expanded/manifest.json",
+          "data_audit": {
+            "manifest_sha256": "7e5e76a5501f536765295c364908f892e42e4f29a08a4a81b646478f7313f048",
+            "counts": {
+              "train": {
+                "fist": 570,
+                "open_palm": 570,
+                "peace": 570,
+                "thumbs_up": 570
+              },
+              "val": {
+                "fist": 100,
+                "open_palm": 100,
+                "peace": 100,
+                "thumbs_up": 100
+              },
+              "test": {
+                "fist": 100,
+                "open_palm": 100,
+                "peace": 100,
+                "thumbs_up": 100
+              }
+            },
+            "user_counts": {
+              "train": 1866,
+              "val": 218,
+              "test": 292
+            },
+            "known_user_sets_disjoint": true,
+            "users_disjoint": true,
+            "full_subject_independence_verified": true,
+            "original_train_sources_without_user_id": [],
+            "all_original_participants_excluded": true,
+            "source_ids_disjoint": true,
+            "crop_hashes_verified": 3080,
+            "original_holdouts_excluded_from_manifest": true,
+            "upstream_metadata": {
+              "ready": true,
+              "seed": 42,
+              "counts": {
+                "train": {
+                  "fist": 570,
+                  "open_palm": 570,
+                  "peace": 570,
+                  "thumbs_up": 570
+                },
+                "val": {
+                  "fist": 100,
+                  "open_palm": 100,
+                  "peace": 100,
+                  "thumbs_up": 100
+                },
+                "test": {
+                  "fist": 100,
+                  "open_palm": 100,
+                  "peace": 100,
+                  "thumbs_up": 100
+                }
+              },
+              "additional_counts": {
+                "train": {
+                  "fist": 500,
+                  "open_palm": 500,
+                  "peace": 500,
+                  "thumbs_up": 500
+                },
+                "val": {
+                  "fist": 100,
+                  "open_palm": 100,
+                  "peace": 100,
+                  "thumbs_up": 100
+                },
+                "test": {
+                  "fist": 100,
+                  "open_palm": 100,
+                  "peace": 100,
+                  "thumbs_up": 100
+                }
+              },
+              "original_images": 400,
+              "original_annotations_matched": 400,
+              "original_unresolved_source_ids": [],
+              "excluded_original_participants": 400,
+              "unresolved_original_source_ids": [],
+              "original_split_participant_overlaps": {
+                "train_val": 0,
+                "train_test": 0,
+                "val_test": 0
+              },
+              "all_original_participants_excluded": true,
+              "additional_participants_disjoint": true,
+              "original_val_test_preserved": true,
+              "additional_unique_participants": {
+                "train": 1586,
+                "val": 218,
+                "test": 292
+              },
+              "exact_source_overlap": 0,
+              "crop_hash_duplicates": 0,
+              "original_holdout_perceptual_candidates_retained": 0,
+              "new_cross_split_perceptual_candidates": [],
+              "rejected": {
+                "failed_ValueError": 110,
+                "new_cross_split_perceptual_candidate": 16,
+                "holdout_perceptual_candidate": 1
+              },
+              "perceptual_overlap_review_complete": true,
+              "download_bytes_this_run": 3148976183,
+              "download_budget_bytes": 8589934592,
+              "elapsed_seconds": 752.9679999999998,
+              "crop_policy": "matching official hand bbox;15% each-side margin; gray128 letterbox320 RGB; no training augmentation saved",
+              "source": "https://github.com/hukenovs/hagrid",
+              "annotations_url": "https://rndml-team-cv.obs.ru-moscow-1.hc.sbercloud.ru/datasets/hagrid_v2/annotations_with_landmarks/annotations.zip",
+              "peace_semantics": "Logicalpeace includes75% officialpeace and25% officialpeace_inverted in additional splits; sourcegesture retained perrecord",
+              "license_url": "https://github.com/hukenovs/hagrid/tree/master/license",
+              "cached_license": "data/hagrid_cache/HaGRID_license_en_us.pdf",
+              "cached_license_sha256": "14f4845e9c8d3de875cbac4139491da368ab1040a7f565e02894477279134d22",
+              "license_note": "HaGRID custom public license with attribution/conditions, derived from Attribution-ShareAlike4.0; license explicitly says it is not a Creative Commons license. Official terms cached locally; original participant consent not independently verified.",
+              "split_policy": "Original70/class train retained; original val/test immutable and not in new manifest; extra official subject-disjoint splits; exclude recovered original participants; one candidate/user/upstreamgesture",
+              "limitations": "Original subject exclusion is verified only for matched source IDs; perceptual hashes are screening, not proof against semantic near-duplicates."
+            }
+          },
+          "first_backbone_conv_weight_l2_change": 0.029110871255397797,
+          "legacy_checkpoint_sha256": {
+            "mobilenetv4.pt": "f759b9ea8be49117dcd958db62359b5cc2eac16aeec442bf2265af4054433d2f",
+            "mobilenetv4_noaug.pt": "3b8c97278384a74b7b5be118c55d3675b815fd7e018ba147cc291c3a650f8d38",
+            "resnet18.pt": "b7350ba08e13105b81ab39ad8a86e61d6160b1fbbd22d9cf78ae67267f3e7b1f",
+            "simple_cnn.pt": "705f864889a1d15cf804e65b22e874723b2eed8ec6b6c3e1cd92e5f0c64839b4"
+          },
+          "environment": {
+            "python": "3.10.9",
+            "torch": "2.6.0+cu124",
+            "device": "cuda",
+            "gpu": "NVIDIA GeForce GTX 1660 Ti",
+            "cuda": "12.4",
+            "amp": true,
+            "precision_policy": "ResNet CUDA AMP; MobileNet CUDA float32 after observed nonfinite fp16 gradients on GTX1660Ti",
+            "peak_cuda_memory_bytes": 449586176,
+            "cpu": "Intel64 Family 6 Model 158 Stepping 11, GenuineIntel",
+            "cpu_threads": 2,
+            "platform": "Windows-10-10.0.19045-SP0"
+          },
+          "source_dataset_license": "See expansion audit/upstream provenance; original consent remains unverified",
+          "normalization_policy": "RGB gray128 letterbox; per-model metadata normalization; identical train/serving"
+        }
+      },
+      {
+        "id": "mobilenetv4_finetuned",
+        "name": "MobileNetV4 \u00b7 expanded-data fine-tuning",
+        "available": true,
+        "reason": null,
+        "version": "5af916440bf7f3af9f0a2578b844f2215043af6337ee8b8d6c4dd1a53eed50af",
+        "metadata": {
+          "model_id": "mobilenetv4_finetuned",
+          "classes": [
+            "fist",
+            "open_palm",
+            "peace",
+            "thumbs_up"
+          ],
+          "trained": true,
+          "input_size": 256,
+          "mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "seed": 42,
+          "pretrained_source": "timm/mobilenetv4_conv_small.e3600_r256_in1k",
+          "pretrained_weights_loaded": true,
+          "initialization": "fresh original ImageNet pretrained backbone; new four-class head",
+          "pretrained_config": {
+            "architecture": "mobilenetv4_conv_small",
+            "hf_hub_id": "timm/mobilenetv4_conv_small.e3600_r256_in1k",
+            "input_size": [
+              3,
+              256,
+              256
+            ],
+            "mean": [
+              0.5,
+              0.5,
+              0.5
+            ],
+            "std": [
+              0.5,
+              0.5,
+              0.5
+            ],
+            "license": "apache-2.0"
+          },
+          "backbone_frozen": false,
+          "training_method": "2-stage head warmup then full-backbone gradient fine-tuning",
+          "finetuned_backbone_parameters": 2493024,
+          "augmentation": "train_only_on_the_fly_flip_affine_color_jitter; no synthetic media",
+          "best_epoch": 9,
+          "best_val_loss": 0.004460720299211971,
+          "actual_epochs": 10,
+          "head_epochs": 2,
+          "validation_metrics": {
+            "accuracy": 0.9975,
+            "precision_macro": 0.9975247524752475,
+            "recall_macro": 0.9975,
+            "f1_macro": 0.9974999374984375,
+            "per_class": {
+              "fist": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 100.0
+              },
+              "open_palm": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "f1-score": 1.0,
+                "support": 100.0
+              },
+              "peace": {
+                "precision": 0.9900990099009901,
+                "recall": 1.0,
+                "f1-score": 0.9950248756218906,
+                "support": 100.0
+              },
+              "thumbs_up": {
+                "precision": 1.0,
+                "recall": 0.99,
+                "f1-score": 0.9949748743718593,
+                "support": 100.0
+              }
+            },
+            "sample_count": 400,
+            "accuracy_wilson_95": [
+              0.9859767149241766,
+              0.9995585522131983
+            ],
+            "interval_caveat": "Official participant IDs are excluded across splits; image-level interval may understate within-user correlation."
+          },
+          "finetune_epoch_budget": 8,
+          "patience": 4,
+          "batch_size": 16,
+          "head_warmup_lr": 0.001,
+          "finetune_backbone_lr": 1e-05,
+          "finetune_head_lr": 0.0001,
+          "weight_decay": 0.0001,
+          "checkpoint_selection": "minimum new HaGRID validation cross-entropy; known-user-disjoint splits; only post-backbone-optimization checkpoints eligible",
+          "trained_at": "2026-11-06T22:03:25.296360+00:00",
+          "training_seconds": 400.18514680000044,
+          "train_count": 2280,
+          "validation_count": 400,
+          "expanded_test_count": 400,
+          "manifest_path": "data/expanded/manifest.json",
+          "data_audit": {
+            "manifest_sha256": "7e5e76a5501f536765295c364908f892e42e4f29a08a4a81b646478f7313f048",
+            "counts": {
+              "train": {
+                "fist": 570,
+                "open_palm": 570,
+                "peace": 570,
+                "thumbs_up": 570
+              },
+              "val": {
+                "fist": 100,
+                "open_palm": 100,
+                "peace": 100,
+                "thumbs_up": 100
+              },
+              "test": {
+                "fist": 100,
+                "open_palm": 100,
+                "peace": 100,
+                "thumbs_up": 100
+              }
+            },
+            "user_counts": {
+              "train": 1866,
+              "val": 218,
+              "test": 292
+            },
+            "known_user_sets_disjoint": true,
+            "users_disjoint": true,
+            "full_subject_independence_verified": true,
+            "original_train_sources_without_user_id": [],
+            "all_original_participants_excluded": true,
+            "source_ids_disjoint": true,
+            "crop_hashes_verified": 3080,
+            "original_holdouts_excluded_from_manifest": true,
+            "upstream_metadata": {
+              "ready": true,
+              "seed": 42,
+              "counts": {
+                "train": {
+                  "fist": 570,
+                  "open_palm": 570,
+                  "peace": 570,
+                  "thumbs_up": 570
+                },
+                "val": {
+                  "fist": 100,
+                  "open_palm": 100,
+                  "peace": 100,
+                  "thumbs_up": 100
+                },
+                "test": {
+                  "fist": 100,
+                  "open_palm": 100,
+                  "peace": 100,
+                  "thumbs_up": 100
+                }
+              },
+              "additional_counts": {
+                "train": {
+                  "fist": 500,
+                  "open_palm": 500,
+                  "peace": 500,
+                  "thumbs_up": 500
+                },
+                "val": {
+                  "fist": 100,
+                  "open_palm": 100,
+                  "peace": 100,
+                  "thumbs_up": 100
+                },
+                "test": {
+                  "fist": 100,
+                  "open_palm": 100,
+                  "peace": 100,
+                  "thumbs_up": 100
+                }
+              },
+              "original_images": 400,
+              "original_annotations_matched": 400,
+              "original_unresolved_source_ids": [],
+              "excluded_original_participants": 400,
+              "unresolved_original_source_ids": [],
+              "original_split_participant_overlaps": {
+                "train_val": 0,
+                "train_test": 0,
+                "val_test": 0
+              },
+              "all_original_participants_excluded": true,
+              "additional_participants_disjoint": true,
+              "original_val_test_preserved": true,
+              "additional_unique_participants": {
+                "train": 1586,
+                "val": 218,
+                "test": 292
+              },
+              "exact_source_overlap": 0,
+              "crop_hash_duplicates": 0,
+              "original_holdout_perceptual_candidates_retained": 0,
+              "new_cross_split_perceptual_candidates": [],
+              "rejected": {
+                "failed_ValueError": 110,
+                "new_cross_split_perceptual_candidate": 16,
+                "holdout_perceptual_candidate": 1
+              },
+              "perceptual_overlap_review_complete": true,
+              "download_bytes_this_run": 3148976183,
+              "download_budget_bytes": 8589934592,
+              "elapsed_seconds": 752.9679999999998,
+              "crop_policy": "matching official hand bbox;15% each-side margin; gray128 letterbox320 RGB; no training augmentation saved",
+              "source": "https://github.com/hukenovs/hagrid",
+              "annotations_url": "https://rndml-team-cv.obs.ru-moscow-1.hc.sbercloud.ru/datasets/hagrid_v2/annotations_with_landmarks/annotations.zip",
+              "peace_semantics": "Logicalpeace includes75% officialpeace and25% officialpeace_inverted in additional splits; sourcegesture retained perrecord",
+              "license_url": "https://github.com/hukenovs/hagrid/tree/master/license",
+              "cached_license": "data/hagrid_cache/HaGRID_license_en_us.pdf",
+              "cached_license_sha256": "14f4845e9c8d3de875cbac4139491da368ab1040a7f565e02894477279134d22",
+              "license_note": "HaGRID custom public license with attribution/conditions, derived from Attribution-ShareAlike4.0; license explicitly says it is not a Creative Commons license. Official terms cached locally; original participant consent not independently verified.",
+              "split_policy": "Original70/class train retained; original val/test immutable and not in new manifest; extra official subject-disjoint splits; exclude recovered original participants; one candidate/user/upstreamgesture",
+              "limitations": "Original subject exclusion is verified only for matched source IDs; perceptual hashes are screening, not proof against semantic near-duplicates."
+            }
+          },
+          "first_backbone_conv_weight_l2_change": 0.006933201570063829,
+          "legacy_checkpoint_sha256": {
+            "mobilenetv4.pt": "f759b9ea8be49117dcd958db62359b5cc2eac16aeec442bf2265af4054433d2f",
+            "mobilenetv4_noaug.pt": "3b8c97278384a74b7b5be118c55d3675b815fd7e018ba147cc291c3a650f8d38",
+            "resnet18.pt": "b7350ba08e13105b81ab39ad8a86e61d6160b1fbbd22d9cf78ae67267f3e7b1f",
+            "simple_cnn.pt": "705f864889a1d15cf804e65b22e874723b2eed8ec6b6c3e1cd92e5f0c64839b4"
+          },
+          "environment": {
+            "python": "3.10.9",
+            "torch": "2.6.0+cu124",
+            "device": "cuda",
+            "gpu": "NVIDIA GeForce GTX 1660 Ti",
+            "cuda": "12.4",
+            "amp": false,
+            "precision_policy": "ResNet CUDA AMP; MobileNet CUDA float32 after observed nonfinite fp16 gradients on GTX1660Ti",
+            "peak_cuda_memory_bytes": 454705664,
+            "cpu": "Intel64 Family 6 Model 158 Stepping 11, GenuineIntel",
+            "cpu_threads": 2,
+            "platform": "Windows-10-10.0.19045-SP0"
+          },
+          "source_dataset_license": "See expansion audit/upstream provenance; original consent remains unverified",
+          "normalization_policy": "RGB gray128 letterbox; per-model metadata normalization; identical train/serving"
+        }
+      }
+    ]
+  },
+  "predictions": [
+    {
+      "model_id": "simple_cnn",
+      "version": "705f864889a1d15cf804e65b22e874723b2eed8ec6b6c3e1cd92e5f0c64839b4",
+      "label": "fist",
+      "probabilities": {
+        "fist": 0.993759036064148,
+        "open_palm": 0.005995039828121662,
+        "peace": 3.481131827243189e-08,
+        "thumbs_up": 0.00024590938119217753
+      },
+      "latency_ms": 37.42500000043947,
+      "device": "cpu",
+      "preprocessing": {
+        "input_size": 224,
+        "channel_order": "RGB",
+        "padding": [
+          128,
+          128,
+          128
+        ],
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ],
+        "roi": "User-selected hand crop; no automatic hand detector",
+        "latency_scope": "Model inference including Grad-CAM when requested; excludes queue, decode and network"
+      },
+      "explanation": {
+        "mime_type": "image/png",
+        "width": 224,
+        "height": 224,
+        "method": "Grad-CAM (gradient-based approximation)"
+      },
+      "source": "data/ready_dataset/test/fist/05b80c34-0237-42ba-818a-189922e3b328.jpg"
+    },
+    {
+      "model_id": "simple_cnn",
+      "version": "705f864889a1d15cf804e65b22e874723b2eed8ec6b6c3e1cd92e5f0c64839b4",
+      "label": "peace",
+      "probabilities": {
+        "fist": 2.3329143061801005e-07,
+        "open_palm": 7.054059551592218e-06,
+        "peace": 0.9920700192451477,
+        "thumbs_up": 0.007922607474029064
+      },
+      "latency_ms": 18.641599999682512,
+      "device": "cpu",
+      "preprocessing": {
+        "input_size": 224,
+        "channel_order": "RGB",
+        "padding": [
+          128,
+          128,
+          128
+        ],
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ],
+        "roi": "User-selected hand crop; no automatic hand detector",
+        "latency_scope": "Model inference including Grad-CAM when requested; excludes queue, decode and network"
+      },
+      "explanation": {
+        "mime_type": "image/png",
+        "width": 224,
+        "height": 224,
+        "method": "Grad-CAM (gradient-based approximation)"
+      },
+      "source": "data/ready_dataset/test/peace/0bd4aca5-b651-43b7-917c-8c9f3b78f439.jpg"
+    },
+    {
+      "model_id": "resnet18",
+      "version": "b7350ba08e13105b81ab39ad8a86e61d6160b1fbbd22d9cf78ae67267f3e7b1f",
+      "label": "fist",
+      "probabilities": {
+        "fist": 0.9989067316055298,
+        "open_palm": 0.0010457251919433475,
+        "peace": 3.144554284517653e-05,
+        "thumbs_up": 1.610710569366347e-05
+      },
+      "latency_ms": 124.07309999980498,
+      "device": "cpu",
+      "preprocessing": {
+        "input_size": 224,
+        "channel_order": "RGB",
+        "padding": [
+          128,
+          128,
+          128
+        ],
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ],
+        "roi": "User-selected hand crop; no automatic hand detector",
+        "latency_scope": "Model inference including Grad-CAM when requested; excludes queue, decode and network"
+      },
+      "explanation": {
+        "mime_type": "image/png",
+        "width": 224,
+        "height": 224,
+        "method": "Grad-CAM (gradient-based approximation)"
+      },
+      "source": "data/ready_dataset/test/fist/05b80c34-0237-42ba-818a-189922e3b328.jpg"
+    },
+    {
+      "model_id": "resnet18",
+      "version": "b7350ba08e13105b81ab39ad8a86e61d6160b1fbbd22d9cf78ae67267f3e7b1f",
+      "label": "peace",
+      "probabilities": {
+        "fist": 0.017280977219343185,
+        "open_palm": 0.009692544117569923,
+        "peace": 0.971433699131012,
+        "thumbs_up": 0.001592716434970498
+      },
+      "latency_ms": 104.38480000084382,
+      "device": "cpu",
+      "preprocessing": {
+        "input_size": 224,
+        "channel_order": "RGB",
+        "padding": [
+          128,
+          128,
+          128
+        ],
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ],
+        "roi": "User-selected hand crop; no automatic hand detector",
+        "latency_scope": "Model inference including Grad-CAM when requested; excludes queue, decode and network"
+      },
+      "explanation": {
+        "mime_type": "image/png",
+        "width": 224,
+        "height": 224,
+        "method": "Grad-CAM (gradient-based approximation)"
+      },
+      "source": "data/ready_dataset/test/peace/0bd4aca5-b651-43b7-917c-8c9f3b78f439.jpg"
+    },
+    {
+      "model_id": "mobilenetv4",
+      "version": "f759b9ea8be49117dcd958db62359b5cc2eac16aeec442bf2265af4054433d2f",
+      "label": "fist",
+      "probabilities": {
+        "fist": 0.9999008178710938,
+        "open_palm": 4.567962241708301e-05,
+        "peace": 9.56284929998219e-06,
+        "thumbs_up": 4.3967545934719965e-05
+      },
+      "latency_ms": 88.41979999851901,
+      "device": "cpu",
+      "preprocessing": {
+        "input_size": 224,
+        "channel_order": "RGB",
+        "padding": [
+          128,
+          128,
+          128
+        ],
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ],
+        "roi": "User-selected hand crop; no automatic hand detector",
+        "latency_scope": "Model inference including Grad-CAM when requested; excludes queue, decode and network"
+      },
+      "explanation": {
+        "mime_type": "image/png",
+        "width": 224,
+        "height": 224,
+        "method": "Grad-CAM (gradient-based approximation)"
+      },
+      "source": "data/ready_dataset/test/fist/05b80c34-0237-42ba-818a-189922e3b328.jpg"
+    },
+    {
+      "model_id": "mobilenetv4",
+      "version": "f759b9ea8be49117dcd958db62359b5cc2eac16aeec442bf2265af4054433d2f",
+      "label": "peace",
+      "probabilities": {
+        "fist": 0.006596853956580162,
+        "open_palm": 0.022507932037115097,
+        "peace": 0.9692310094833374,
+        "thumbs_up": 0.0016642262926325202
+      },
+      "latency_ms": 61.54419999984384,
+      "device": "cpu",
+      "preprocessing": {
+        "input_size": 224,
+        "channel_order": "RGB",
+        "padding": [
+          128,
+          128,
+          128
+        ],
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ],
+        "roi": "User-selected hand crop; no automatic hand detector",
+        "latency_scope": "Model inference including Grad-CAM when requested; excludes queue, decode and network"
+      },
+      "explanation": {
+        "mime_type": "image/png",
+        "width": 224,
+        "height": 224,
+        "method": "Grad-CAM (gradient-based approximation)"
+      },
+      "source": "data/ready_dataset/test/peace/0bd4aca5-b651-43b7-917c-8c9f3b78f439.jpg"
+    },
+    {
+      "model_id": "resnet18_finetuned",
+      "version": "d912da8e800701ec70fbf1f7330ca40593fe4f84fafa5d4f8a9730d7d6e3e26e",
+      "label": "fist",
+      "probabilities": {
+        "fist": 0.9997774958610535,
+        "open_palm": 0.00022075641027186066,
+        "peace": 9.976209867090802e-07,
+        "thumbs_up": 8.223810255003627e-07
+      },
+      "latency_ms": 113.33399999966787,
+      "device": "cpu",
+      "preprocessing": {
+        "input_size": 224,
+        "channel_order": "RGB",
+        "padding": [
+          128,
+          128,
+          128
+        ],
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ],
+        "roi": "User-selected hand crop; no automatic hand detector",
+        "latency_scope": "Model inference including Grad-CAM when requested; excludes queue, decode and network"
+      },
+      "explanation": {
+        "mime_type": "image/png",
+        "width": 224,
+        "height": 224,
+        "method": "Grad-CAM (gradient-based approximation)"
+      },
+      "source": "data/ready_dataset/test/fist/05b80c34-0237-42ba-818a-189922e3b328.jpg"
+    },
+    {
+      "model_id": "resnet18_finetuned",
+      "version": "d912da8e800701ec70fbf1f7330ca40593fe4f84fafa5d4f8a9730d7d6e3e26e",
+      "label": "peace",
+      "probabilities": {
+        "fist": 1.176959449367132e-05,
+        "open_palm": 4.600101237883791e-05,
+        "peace": 0.9999368190765381,
+        "thumbs_up": 5.401190264819888e-06
+      },
+      "latency_ms": 111.86719999932393,
+      "device": "cpu",
+      "preprocessing": {
+        "input_size": 224,
+        "channel_order": "RGB",
+        "padding": [
+          128,
+          128,
+          128
+        ],
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ],
+        "roi": "User-selected hand crop; no automatic hand detector",
+        "latency_scope": "Model inference including Grad-CAM when requested; excludes queue, decode and network"
+      },
+      "explanation": {
+        "mime_type": "image/png",
+        "width": 224,
+        "height": 224,
+        "method": "Grad-CAM (gradient-based approximation)"
+      },
+      "source": "data/ready_dataset/test/peace/0bd4aca5-b651-43b7-917c-8c9f3b78f439.jpg"
+    },
+    {
+      "model_id": "mobilenetv4_finetuned",
+      "version": "5af916440bf7f3af9f0a2578b844f2215043af6337ee8b8d6c4dd1a53eed50af",
+      "label": "fist",
+      "probabilities": {
+        "fist": 0.9999831914901733,
+        "open_palm": 1.0388717782916501e-05,
+        "peace": 1.1659153642540332e-06,
+        "thumbs_up": 5.293492904456798e-06
+      },
+      "latency_ms": 174.89480000040203,
+      "device": "cpu",
+      "preprocessing": {
+        "input_size": 256,
+        "channel_order": "RGB",
+        "padding": [
+          128,
+          128,
+          128
+        ],
+        "mean": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "std": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "roi": "User-selected hand crop; no automatic hand detector",
+        "latency_scope": "Model inference including Grad-CAM when requested; excludes queue, decode and network"
+      },
+      "explanation": {
+        "mime_type": "image/png",
+        "width": 256,
+        "height": 256,
+        "method": "Grad-CAM (gradient-based approximation)"
+      },
+      "source": "data/ready_dataset/test/fist/05b80c34-0237-42ba-818a-189922e3b328.jpg"
+    },
+    {
+      "model_id": "mobilenetv4_finetuned",
+      "version": "5af916440bf7f3af9f0a2578b844f2215043af6337ee8b8d6c4dd1a53eed50af",
+      "label": "peace",
+      "probabilities": {
+        "fist": 1.0632839803292882e-05,
+        "open_palm": 4.6414796088356525e-05,
+        "peace": 0.9999395608901978,
+        "thumbs_up": 3.296750719528063e-06
+      },
+      "latency_ms": 118.7926000002335,
+      "device": "cpu",
+      "preprocessing": {
+        "input_size": 256,
+        "channel_order": "RGB",
+        "padding": [
+          128,
+          128,
+          128
+        ],
+        "mean": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "std": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "roi": "User-selected hand crop; no automatic hand detector",
+        "latency_scope": "Model inference including Grad-CAM when requested; excludes queue, decode and network"
+      },
+      "explanation": {
+        "mime_type": "image/png",
+        "width": 256,
+        "height": 256,
+        "method": "Grad-CAM (gradient-based approximation)"
+      },
+      "source": "data/ready_dataset/test/peace/0bd4aca5-b651-43b7-917c-8c9f3b78f439.jpg"
+    }
+  ],
+  "legacy_artifacts_unchanged": true,
+  "experiment_runs": [
+    "simple_cnn",
+    "resnet18",
+    "mobilenetv4",
+    "mobilenetv4_noaug",
+    "resnet18_finetuned",
+    "mobilenetv4_finetuned"
+  ]
+}

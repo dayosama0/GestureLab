@@ -1,0 +1,262 @@
+{
+  "runs": [
+    {
+      "run_id": "simple_cnn",
+      "checkpoint_sha256": "705f864889a1d15cf804e65b22e874723b2eed8ec6b6c3e1cd92e5f0c64839b4",
+      "metadata": {
+        "model_id": "simple_cnn",
+        "classes": [
+          "fist",
+          "open_palm",
+          "peace",
+          "thumbs_up"
+        ],
+        "trained": true,
+        "input_size": 224,
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ],
+        "seed": 42,
+        "augmentation": "moderate_4_fixed_variants_plus_original",
+        "pretrained_source": "random initialization; trained from scratch",
+        "backbone_frozen": false,
+        "best_epoch": 7,
+        "pretrained_weights_loaded": false,
+        "pretrained_config": {},
+        "source_dataset_license": "Not supplied; do not redistribute private source photos",
+        "best_val_loss": 0.1208518773317337,
+        "epoch_budget": 15,
+        "patience": 5,
+        "actual_epochs": 12,
+        "batch_size": 32,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "checkpoint_selection": "minimum validation cross-entropy",
+        "trained_at": "2026-10-30T05:43:52.214403+00:00",
+        "training_seconds": 157.6986631000036,
+        "normalization_policy": "ImageNet; 224 RGB gray-128 letterbox, user-selected hand ROI",
+        "pretrained_native_input_size": 224,
+        "adaptation": "A1 architecture reproduction",
+        "dataset_audit_sha256": "c973a36c77466e2ef4a362af0e7b9cb0437e5f822047d7131d2e49b225155dfc",
+        "environment": {
+          "python": "3.10.9",
+          "torch": "2.14.1+cpu",
+          "platform": "Windows-10-10.0.19045-SP0",
+          "processor": "Intel64 Family 6 Model 158 Stepping 11, GenuineIntel",
+          "device": "cpu",
+          "threads": 2
+        }
+      }
+    },
+    {
+      "run_id": "resnet18",
+      "checkpoint_sha256": "b7350ba08e13105b81ab39ad8a86e61d6160b1fbbd22d9cf78ae67267f3e7b1f",
+      "metadata": {
+        "model_id": "resnet18",
+        "classes": [
+          "fist",
+          "open_palm",
+          "peace",
+          "thumbs_up"
+        ],
+        "trained": true,
+        "input_size": 224,
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ],
+        "seed": 42,
+        "augmentation": "moderate_4_fixed_variants_plus_original",
+        "pretrained_source": "torchvision ResNet18_Weights.IMAGENET1K_V1",
+        "backbone_frozen": true,
+        "best_epoch": 15,
+        "pretrained_weights_loaded": true,
+        "pretrained_config": {},
+        "source_dataset_license": "Not supplied; do not redistribute private source photos",
+        "best_val_loss": 0.12204372609655062,
+        "epoch_budget": 15,
+        "patience": 5,
+        "actual_epochs": 15,
+        "batch_size": 32,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "checkpoint_selection": "minimum validation cross-entropy",
+        "trained_at": "2026-10-30T05:45:19.673151+00:00",
+        "training_seconds": 85.50670209999953,
+        "normalization_policy": "ImageNet; 224 RGB gray-128 letterbox, user-selected hand ROI",
+        "pretrained_native_input_size": 224,
+        "adaptation": "A1 architecture reproduction",
+        "dataset_audit_sha256": "c973a36c77466e2ef4a362af0e7b9cb0437e5f822047d7131d2e49b225155dfc",
+        "environment": {
+          "python": "3.10.9",
+          "torch": "2.14.1+cpu",
+          "platform": "Windows-10-10.0.19045-SP0",
+          "processor": "Intel64 Family 6 Model 158 Stepping 11, GenuineIntel",
+          "device": "cpu",
+          "threads": 2
+        }
+      }
+    },
+    {
+      "run_id": "mobilenetv4_noaug",
+      "checkpoint_sha256": "3b8c97278384a74b7b5be118c55d3675b815fd7e018ba147cc291c3a650f8d38",
+      "metadata": {
+        "model_id": "mobilenetv4",
+        "classes": [
+          "fist",
+          "open_palm",
+          "peace",
+          "thumbs_up"
+        ],
+        "trained": true,
+        "input_size": 224,
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ],
+        "seed": 42,
+        "augmentation": "none",
+        "pretrained_source": "timm/mobilenetv4_conv_small.e3600_r256_in1k",
+        "backbone_frozen": true,
+        "best_epoch": 14,
+        "pretrained_weights_loaded": true,
+        "pretrained_config": {
+          "architecture": "mobilenetv4_conv_small",
+          "hf_hub_id": "timm/mobilenetv4_conv_small.e3600_r256_in1k",
+          "url": "",
+          "input_size": [
+            3,
+            256,
+            256
+          ],
+          "mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "std": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        "source_dataset_license": "Not supplied; do not redistribute private source photos",
+        "best_val_loss": 0.26741844515005747,
+        "epoch_budget": 15,
+        "patience": 5,
+        "actual_epochs": 15,
+        "batch_size": 32,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "checkpoint_selection": "minimum validation cross-entropy",
+        "trained_at": "2026-10-30T05:45:46.011503+00:00",
+        "training_seconds": 12.653680000003078,
+        "normalization_policy": "ImageNet; 224 RGB gray-128 letterbox, user-selected hand ROI",
+        "pretrained_native_input_size": 256,
+        "adaptation": "MobileNetV4 native 256 weights evaluated at shared 224 ROI",
+        "dataset_audit_sha256": "c973a36c77466e2ef4a362af0e7b9cb0437e5f822047d7131d2e49b225155dfc",
+        "environment": {
+          "python": "3.10.9",
+          "torch": "2.14.1+cpu",
+          "platform": "Windows-10-10.0.19045-SP0",
+          "processor": "Intel64 Family 6 Model 158 Stepping 11, GenuineIntel",
+          "device": "cpu",
+          "threads": 2
+        }
+      }
+    },
+    {
+      "run_id": "mobilenetv4",
+      "checkpoint_sha256": "f759b9ea8be49117dcd958db62359b5cc2eac16aeec442bf2265af4054433d2f",
+      "metadata": {
+        "model_id": "mobilenetv4",
+        "classes": [
+          "fist",
+          "open_palm",
+          "peace",
+          "thumbs_up"
+        ],
+        "trained": true,
+        "input_size": 224,
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ],
+        "seed": 42,
+        "augmentation": "moderate_4_fixed_variants_plus_original",
+        "pretrained_source": "timm/mobilenetv4_conv_small.e3600_r256_in1k",
+        "backbone_frozen": true,
+        "best_epoch": 12,
+        "pretrained_weights_loaded": true,
+        "pretrained_config": {
+          "architecture": "mobilenetv4_conv_small",
+          "hf_hub_id": "timm/mobilenetv4_conv_small.e3600_r256_in1k",
+          "url": "",
+          "input_size": [
+            3,
+            256,
+            256
+          ],
+          "mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "std": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        "source_dataset_license": "Not supplied; do not redistribute private source photos",
+        "best_val_loss": 0.13225584775209426,
+        "epoch_budget": 15,
+        "patience": 5,
+        "actual_epochs": 15,
+        "batch_size": 32,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "checkpoint_selection": "minimum validation cross-entropy",
+        "trained_at": "2026-10-30T05:46:12.463561+00:00",
+        "training_seconds": 21.507739499997115,
+        "normalization_policy": "ImageNet; 224 RGB gray-128 letterbox, user-selected hand ROI",
+        "pretrained_native_input_size": 256,
+        "adaptation": "MobileNetV4 native 256 weights evaluated at shared 224 ROI",
+        "dataset_audit_sha256": "c973a36c77466e2ef4a362af0e7b9cb0437e5f822047d7131d2e49b225155dfc",
+        "environment": {
+          "python": "3.10.9",
+          "torch": "2.14.1+cpu",
+          "platform": "Windows-10-10.0.19045-SP0",
+          "processor": "Intel64 Family 6 Model 158 Stepping 11, GenuineIntel",
+          "device": "cpu",
+          "threads": 2
+        }
+      }
+    }
+  ]
+}

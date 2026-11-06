@@ -1,0 +1,15 @@
+{
+  "artifacts\\checkpoints\\mobilenetv4.pt": "f759b9ea8be49117dcd958db62359b5cc2eac16aeec442bf2265af4054433d2f",
+  "artifacts\\checkpoints\\mobilenetv4_noaug.pt": "3b8c97278384a74b7b5be118c55d3675b815fd7e018ba147cc291c3a650f8d38",
+  "artifacts\\checkpoints\\resnet18.pt": "b7350ba08e13105b81ab39ad8a86e61d6160b1fbbd22d9cf78ae67267f3e7b1f",
+  "artifacts\\checkpoints\\simple_cnn.pt": "705f864889a1d15cf804e65b22e874723b2eed8ec6b6c3e1cd92e5f0c64839b4",
+  "artifacts\\metrics\\classification_report_mobilenetv4.json": "0daf7c5cd4722896b3bdc1aaaffbcd899953ade854ddb617d2647553058bef72",
+  "artifacts\\metrics\\classification_report_mobilenetv4_noaug.json": "69e43972355a568aa32850e4ab49a8492549a150baa9ae51e1d83fc992c24a8d",
+  "artifacts\\metrics\\classification_report_resnet18.json": "cfc8d6861a0bf14b87f15cd492018e4855b6f4cc6c829205733c57b76da81298",
+  "artifacts\\metrics\\classification_report_simple_cnn.json": "e07a04fa60e55a9f9c9c65c61911cb556b79fcad11a40010c13b30d20cc254eb",
+  "artifacts\\metrics\\comparison.json": "96a6408bf1fc7f23da396506425b83963710d1860c3787ea9bf76fca67bc98d1",
+  "artifacts\\metrics\\mobilenetv4.json": "187e4e5550acc462c74111524a377861556cd93b626948b946e0db909f2dbd3a",
+  "artifacts\\metrics\\mobilenetv4_noaug.json": "9e16b199358bdd52569683224ff4633b706343d9e5601e7e727711afe9bc055d",
+  "artifacts\\metrics\\resnet18.json": "7c30144d9466a34f73f8838ab1c5e8439510812d22c41f5a67ac223f3eeae0f1",
+  "artifacts\\metrics\\simple_cnn.json": "5fd44dd762fd111e8786e1b69b26d1c3201c9a73ea75e603ac134e43665ab807"
+}

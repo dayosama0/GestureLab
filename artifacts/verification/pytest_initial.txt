@@ -1,0 +1,50 @@
+...........sss.......F                                                   [100%]
+================================== FAILURES ===================================
+_________ test_architecture_forward_restore_and_gradient[mobilenetv4] _________
+
+model_id = 'mobilenetv4'
+
+    @pytest.mark.parametrize("model_id",["simple_cnn","resnet18","mobilenetv4"])
+    def test_architecture_forward_restore_and_gradient(model_id):
+        torch.set_num_threads(2)
+        model=create_model(model_id,pretrained=False).eval()
+        image=torch.randn(1,3,224,224,requires_grad=True)
+        saved=[]
+        hook=target_layer(model).register_forward_hook(lambda module,args,output:saved.append(output))
+>       logits=model(image)
+
+ml\tests\test_ml.py:52: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+.venv\lib\site-packages\torch\nn\modules\module.py:1783: in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+.venv\lib\site-packages\torch\nn\modules\module.py:1794: in _call_impl
+    return forward_call(*args, **kwargs)
+ml\models.py:32: in forward
+    return self.head(self.backbone(images))
+.venv\lib\site-packages\torch\nn\modules\module.py:1783: in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+.venv\lib\site-packages\torch\nn\modules\module.py:1794: in _call_impl
+    return forward_call(*args, **kwargs)
+.venv\lib\site-packages\torch\nn\modules\container.py:259: in forward
+    input = module(input)
+.venv\lib\site-packages\torch\nn\modules\module.py:1783: in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+.venv\lib\site-packages\torch\nn\modules\module.py:1794: in _call_impl
+    return forward_call(*args, **kwargs)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = Linear(in_features=960, out_features=4, bias=True)
+input = tensor([[ 0.0000,  0.0000,  0.0000,  ...,  0.0000, 39.4660,  0.0000]],
+       grad_fn=<ViewBackward0>)
+
+    def forward(self, input: Tensor) -> Tensor:
+        """
+        Runs the forward pass.
+        """
+>       return F.linear(input, self.weight, self.bias)
+E       RuntimeError: mat1 and mat2 shapes cannot be multiplied (1x1280 and 960x4)
+
+.venv\lib\site-packages\torch\nn\modules\linear.py:134: RuntimeError
+=========================== short test summary info ===========================
+FAILED ml/tests/test_ml.py::test_architecture_forward_restore_and_gradient[mobilenetv4]
+1 failed, 18 passed, 3 skipped in 6.88s

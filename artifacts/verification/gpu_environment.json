@@ -1,0 +1,12 @@
+{
+  "torch": "2.6.0+cu124",
+  "cuda_runtime": "12.4",
+  "gpu": "NVIDIA GeForce GTX 1660 Ti",
+  "capability": [
+    7,
+    5
+  ],
+  "cuda_available": true,
+  "amp_forward_backward_finite": true,
+  "scope": "environment smoke only; no task training or metrics claimed"
+}

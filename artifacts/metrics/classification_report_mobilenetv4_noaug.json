@@ -1,0 +1,38 @@
+{
+  "accuracy": 0.9166666666666666,
+  "precision_macro": 0.9270833333333334,
+  "recall_macro": 0.9166666666666667,
+  "f1_macro": 0.9166807114526803,
+  "per_class": {
+    "fist": {
+      "precision": 0.875,
+      "recall": 0.9333333333333333,
+      "f1-score": 0.9032258064516129,
+      "support": 15.0
+    },
+    "open_palm": {
+      "precision": 1.0,
+      "recall": 0.9333333333333333,
+      "f1-score": 0.9655172413793104,
+      "support": 15.0
+    },
+    "peace": {
+      "precision": 1.0,
+      "recall": 0.8,
+      "f1-score": 0.8888888888888888,
+      "support": 15.0
+    },
+    "thumbs_up": {
+      "precision": 0.8333333333333334,
+      "recall": 1.0,
+      "f1-score": 0.9090909090909091,
+      "support": 15.0
+    }
+  },
+  "sample_count": 60,
+  "accuracy_wilson_95": [
+    0.8193105798166558,
+    0.9638795433982692
+  ],
+  "interval_caveat": "Binomial interval assumes independent samples; subject/session independence unverified"
+}

@@ -1,0 +1,15 @@
+{
+  "phase": "fixed expanded training configuration, recorded during the active run",
+  "files": {
+    "ml/hagrid_expand.py": "65fe5d1ebdfb59bbe5c8dcb539e59daa19ad161252fd0e5d1c82a6099331d9ee",
+    "ml/finetune.py": "4ecd133f1609364fc4c39bcc6184336dd808eb7e4a4846719e40e2ac95730a25",
+    "ml/models.py": "7e10235f25720f845f309e1e166e358eead81e656b21d9901ed83cbf0693694b",
+    "ml/preprocessing.py": "ded5ec0b9f7b2c2419826f08cea42574d58c29b0f68eb08f53f82db236d45c17",
+    "ml/evaluate.py": "c74fdf22ec94533874a77d74808fb9d65f642e06dbfe4d17d782cfcd0aa40ca5",
+    "requirements-gpu.txt": "9c16a928df95329da72bd9834c963b0daa2b7bb4c1adce19ff1fc429d6a617d4",
+    "data/expanded/manifest.json": "7e5e76a5501f536765295c364908f892e42e4f29a08a4a81b646478f7313f048"
+  },
+  "legacy_snapshot": "artifacts/verification/legacy_before_expansion.json",
+  "gpu_environment": "artifacts/verification/gpu_environment_freeze.txt",
+  "precision_smoke": "artifacts/verification/gpu_architecture_smoke.json"
+}

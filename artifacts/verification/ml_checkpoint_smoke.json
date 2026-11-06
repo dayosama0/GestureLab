@@ -1,0 +1,134 @@
+[
+  {
+    "model_id": "simple_cnn",
+    "checkpoint_sha256": "705f864889a1d15cf804e65b22e874723b2eed8ec6b6c3e1cd92e5f0c64839b4",
+    "samples": [
+      "test/fist/05b80c34-0237-42ba-818a-189922e3b328.jpg",
+      "test/open_palm/00f6ef65-28ac-46d8-b3e6-97a37210d576.jpg"
+    ],
+    "results": [
+      {
+        "label": "fist",
+        "probabilities": [
+          0.993759036064148,
+          0.005995039828121662,
+          3.481131827243189e-08,
+          0.00024590938119217753
+        ],
+        "cam_shape": [
+          1,
+          28,
+          28
+        ],
+        "cam_min": 0.0,
+        "cam_max": 0.008613405749201775
+      },
+      {
+        "label": "open_palm",
+        "probabilities": [
+          0.03358534723520279,
+          0.9660167098045349,
+          2.6441566660651006e-06,
+          0.00039531581569463015
+        ],
+        "cam_shape": [
+          1,
+          28,
+          28
+        ],
+        "cam_min": 0.0,
+        "cam_max": 0.02352568320930004
+      }
+    ],
+    "input_sensitive": true,
+    "real_spatial_gradients": true
+  },
+  {
+    "model_id": "resnet18",
+    "checkpoint_sha256": "b7350ba08e13105b81ab39ad8a86e61d6160b1fbbd22d9cf78ae67267f3e7b1f",
+    "samples": [
+      "test/fist/05b80c34-0237-42ba-818a-189922e3b328.jpg",
+      "test/open_palm/00f6ef65-28ac-46d8-b3e6-97a37210d576.jpg"
+    ],
+    "results": [
+      {
+        "label": "fist",
+        "probabilities": [
+          0.9989067316055298,
+          0.0010457251919433475,
+          3.144554284517653e-05,
+          1.610710569366347e-05
+        ],
+        "cam_shape": [
+          1,
+          7,
+          7
+        ],
+        "cam_min": 0.0,
+        "cam_max": 0.18134695291519165
+      },
+      {
+        "label": "open_palm",
+        "probabilities": [
+          0.003583759069442749,
+          0.995799720287323,
+          0.00012386722664814442,
+          0.0004926357651129365
+        ],
+        "cam_shape": [
+          1,
+          7,
+          7
+        ],
+        "cam_min": 0.0,
+        "cam_max": 0.17688336968421936
+      }
+    ],
+    "input_sensitive": true,
+    "real_spatial_gradients": true
+  },
+  {
+    "model_id": "mobilenetv4",
+    "checkpoint_sha256": "f759b9ea8be49117dcd958db62359b5cc2eac16aeec442bf2265af4054433d2f",
+    "samples": [
+      "test/fist/05b80c34-0237-42ba-818a-189922e3b328.jpg",
+      "test/open_palm/00f6ef65-28ac-46d8-b3e6-97a37210d576.jpg"
+    ],
+    "results": [
+      {
+        "label": "fist",
+        "probabilities": [
+          0.9999008178710938,
+          4.5679753384320065e-05,
+          9.562858394929208e-06,
+          4.3967633246211335e-05
+        ],
+        "cam_shape": [
+          1,
+          7,
+          7
+        ],
+        "cam_min": 0.0,
+        "cam_max": 0.749769926071167
+      },
+      {
+        "label": "open_palm",
+        "probabilities": [
+          0.00011676954454742372,
+          0.9857262372970581,
+          0.013591337017714977,
+          0.0005656666471622884
+        ],
+        "cam_shape": [
+          1,
+          7,
+          7
+        ],
+        "cam_min": 0.0,
+        "cam_max": 0.5483179092407227
+      }
+    ],
+    "input_sensitive": true,
+    "real_spatial_gradients": true
+  }
+]

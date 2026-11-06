@@ -1,0 +1,14 @@
+
+> gesturelab-studio@1.0.0 build
+> tsc -b && vite build
+
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 2170 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.61 kB │ gzip:   0.37 kB
+dist/assets/index-DkwvrQtd.css   19.17 kB │ gzip:   4.98 kB
+dist/assets/index-DGDXYDFx.js   240.22 kB │ gzip:  75.70 kB
+dist/assets/charts-3DQKxYrO.js  386.10 kB │ gzip: 113.20 kB
+✓ built in 5.04s

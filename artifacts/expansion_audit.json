@@ -1,0 +1,85 @@
+{
+  "ready": true,
+  "seed": 42,
+  "counts": {
+    "train": {
+      "fist": 570,
+      "open_palm": 570,
+      "peace": 570,
+      "thumbs_up": 570
+    },
+    "val": {
+      "fist": 100,
+      "open_palm": 100,
+      "peace": 100,
+      "thumbs_up": 100
+    },
+    "test": {
+      "fist": 100,
+      "open_palm": 100,
+      "peace": 100,
+      "thumbs_up": 100
+    }
+  },
+  "additional_counts": {
+    "train": {
+      "fist": 500,
+      "open_palm": 500,
+      "peace": 500,
+      "thumbs_up": 500
+    },
+    "val": {
+      "fist": 100,
+      "open_palm": 100,
+      "peace": 100,
+      "thumbs_up": 100
+    },
+    "test": {
+      "fist": 100,
+      "open_palm": 100,
+      "peace": 100,
+      "thumbs_up": 100
+    }
+  },
+  "original_images": 400,
+  "original_annotations_matched": 400,
+  "original_unresolved_source_ids": [],
+  "excluded_original_participants": 400,
+  "unresolved_original_source_ids": [],
+  "original_split_participant_overlaps": {
+    "train_val": 0,
+    "train_test": 0,
+    "val_test": 0
+  },
+  "all_original_participants_excluded": true,
+  "additional_participants_disjoint": true,
+  "original_val_test_preserved": true,
+  "additional_unique_participants": {
+    "train": 1586,
+    "val": 218,
+    "test": 292
+  },
+  "exact_source_overlap": 0,
+  "crop_hash_duplicates": 0,
+  "original_holdout_perceptual_candidates_retained": 0,
+  "new_cross_split_perceptual_candidates": [],
+  "rejected": {
+    "failed_ValueError": 110,
+    "new_cross_split_perceptual_candidate": 16,
+    "holdout_perceptual_candidate": 1
+  },
+  "perceptual_overlap_review_complete": true,
+  "download_bytes_this_run": 3148976183,
+  "download_budget_bytes": 8589934592,
+  "elapsed_seconds": 752.9679999999998,
+  "crop_policy": "matching official hand bbox;15% each-side margin; gray128 letterbox320 RGB; no training augmentation saved",
+  "source": "https://github.com/hukenovs/hagrid",
+  "annotations_url": "https://rndml-team-cv.obs.ru-moscow-1.hc.sbercloud.ru/datasets/hagrid_v2/annotations_with_landmarks/annotations.zip",
+  "peace_semantics": "Logicalpeace includes75% officialpeace and25% officialpeace_inverted in additional splits; sourcegesture retained perrecord",
+  "license_url": "https://github.com/hukenovs/hagrid/tree/master/license",
+  "cached_license": "data/hagrid_cache/HaGRID_license_en_us.pdf",
+  "cached_license_sha256": "14f4845e9c8d3de875cbac4139491da368ab1040a7f565e02894477279134d22",
+  "license_note": "HaGRID custom public license with attribution/conditions, derived from Attribution-ShareAlike4.0; license explicitly says it is not a Creative Commons license. Official terms cached locally; original participant consent not independently verified.",
+  "split_policy": "Original70/class train retained; original val/test immutable and not in new manifest; extra official subject-disjoint splits; exclude recovered original participants; one candidate/user/upstreamgesture",
+  "limitations": "Original subject exclusion is verified only for matched source IDs; perceptual hashes are screening, not proof against semantic near-duplicates."
+}

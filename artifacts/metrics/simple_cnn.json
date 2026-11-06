@@ -1,0 +1,357 @@
+{
+  "run_id": "simple_cnn",
+  "model_id": "simple_cnn",
+  "metadata": {
+    "model_id": "simple_cnn",
+    "classes": [
+      "fist",
+      "open_palm",
+      "peace",
+      "thumbs_up"
+    ],
+    "trained": true,
+    "input_size": 224,
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "seed": 42,
+    "augmentation": "moderate_4_fixed_variants_plus_original",
+    "pretrained_source": "random initialization; trained from scratch",
+    "backbone_frozen": false,
+    "best_epoch": 7,
+    "pretrained_weights_loaded": false,
+    "pretrained_config": {},
+    "source_dataset_license": "Not supplied; do not redistribute private source photos",
+    "best_val_loss": 0.1208518773317337,
+    "epoch_budget": 15,
+    "patience": 5,
+    "actual_epochs": 12,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "checkpoint_selection": "minimum validation cross-entropy",
+    "trained_at": "2026-10-30T05:43:52.214403+00:00",
+    "training_seconds": 157.6986631000036,
+    "normalization_policy": "ImageNet; 224 RGB gray-128 letterbox, user-selected hand ROI",
+    "pretrained_native_input_size": 224,
+    "adaptation": "A1 architecture reproduction",
+    "dataset_audit_sha256": "c973a36c77466e2ef4a362af0e7b9cb0437e5f822047d7131d2e49b225155dfc",
+    "environment": {
+      "python": "3.10.9",
+      "torch": "2.14.1+cpu",
+      "platform": "Windows-10-10.0.19045-SP0",
+      "processor": "Intel64 Family 6 Model 158 Stepping 11, GenuineIntel",
+      "device": "cpu",
+      "threads": 2
+    }
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.7720211810725076,
+      "val_loss": 0.6139659384886423,
+      "train_accuracy": 0.6771428571428572,
+      "val_accuracy": 0.6833333333333333
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.36099591272217885,
+      "val_loss": 0.3540684769550959,
+      "train_accuracy": 0.8671428571428571,
+      "val_accuracy": 0.9
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.21210780050073352,
+      "val_loss": 0.3248443573713303,
+      "train_accuracy": 0.9335714285714286,
+      "val_accuracy": 0.9166666666666666
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.14949943695749554,
+      "val_loss": 0.27693778872489927,
+      "train_accuracy": 0.9571428571428572,
+      "val_accuracy": 0.9
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.11353029936552048,
+      "val_loss": 0.30762883424758913,
+      "train_accuracy": 0.9671428571428572,
+      "val_accuracy": 0.9
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.07026479476264545,
+      "val_loss": 0.21977310975392658,
+      "train_accuracy": 0.9814285714285714,
+      "val_accuracy": 0.9
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.04553856043943337,
+      "val_loss": 0.1208518773317337,
+      "train_accuracy": 0.9914285714285714,
+      "val_accuracy": 0.9333333333333333
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.039289935380220416,
+      "val_loss": 0.15157298346360523,
+      "train_accuracy": 0.9892857142857143,
+      "val_accuracy": 0.9333333333333333
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.04160396449267864,
+      "val_loss": 0.19103413025538127,
+      "train_accuracy": 0.9892857142857143,
+      "val_accuracy": 0.9333333333333333
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.047654516947056566,
+      "val_loss": 0.15574472645918527,
+      "train_accuracy": 0.9871428571428571,
+      "val_accuracy": 0.9333333333333333
+    },
+    {
+      "epoch": 11,
+      "train_loss": 0.03125889348664454,
+      "val_loss": 0.2546192983786265,
+      "train_accuracy": 0.9935714285714285,
+      "val_accuracy": 0.9333333333333333
+    },
+    {
+      "epoch": 12,
+      "train_loss": 0.021654804524566446,
+      "val_loss": 0.1566220462322235,
+      "train_accuracy": 0.9964285714285714,
+      "val_accuracy": 0.9333333333333333
+    }
+  ],
+  "metrics": {
+    "accuracy": 0.95,
+    "precision_macro": 0.9510416666666668,
+    "recall_macro": 0.95,
+    "f1_macro": 0.9499814608824622,
+    "per_class": {
+      "fist": {
+        "precision": 0.9375,
+        "recall": 1.0,
+        "f1-score": 0.967741935483871,
+        "support": 15.0
+      },
+      "open_palm": {
+        "precision": 1.0,
+        "recall": 0.9333333333333333,
+        "f1-score": 0.9655172413793104,
+        "support": 15.0
+      },
+      "peace": {
+        "precision": 0.9333333333333333,
+        "recall": 0.9333333333333333,
+        "f1-score": 0.9333333333333333,
+        "support": 15.0
+      },
+      "thumbs_up": {
+        "precision": 0.9333333333333333,
+        "recall": 0.9333333333333333,
+        "f1-score": 0.9333333333333333,
+        "support": 15.0
+      }
+    },
+    "sample_count": 60,
+    "accuracy_wilson_95": [
+      0.8629948352365147,
+      0.9828504978356043
+    ],
+    "interval_caveat": "Binomial interval assumes independent samples; subject/session independence unverified"
+  },
+  "confusion_matrix": [
+    [
+      15,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      14,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      14,
+      1
+    ],
+    [
+      0,
+      0,
+      1,
+      14
+    ]
+  ],
+  "latency": {
+    "mean_ms": 2.00227499990433,
+    "p50_ms": 1.9370000009075738,
+    "p95_ms": 2.819884997370537,
+    "device": "cpu",
+    "repeats": 20,
+    "warmup": 3,
+    "scope": "single-image forward only; preprocessing/network/explanation excluded",
+    "cpu": "Intel64 Family 6 Model 158 Stepping 11, GenuineIntel",
+    "torch_threads": 2,
+    "raw_ms": [
+      1.5951000023051165,
+      2.0772999996552244,
+      1.9683999998960644,
+      2.1884000016143546,
+      1.9056000019190833,
+      1.8665000025066547,
+      2.2519999984069727,
+      2.2074000007705763,
+      1.6753000018070452,
+      1.5290999945136718,
+      2.497000001312699,
+      1.6828000007080846,
+      3.2642000005580485,
+      2.7964999972027726,
+      1.5838000035728328,
+      2.241499998490326,
+      1.6508999979123473,
+      1.978899999812711,
+      1.6351999947801232,
+      1.4496000003418885
+    ]
+  },
+  "stress": {
+    "dim_brightness_0.5": {
+      "accuracy": 0.31666666666666665,
+      "precision_macro": 0.3717948717948718,
+      "recall_macro": 0.31666666666666665,
+      "f1_macro": 0.21953781512605042,
+      "per_class": {
+        "fist": {
+          "precision": 0.3333333333333333,
+          "recall": 1.0,
+          "f1-score": 0.5,
+          "support": 15.0
+        },
+        "open_palm": {
+          "precision": 0.15384615384615385,
+          "recall": 0.13333333333333333,
+          "f1-score": 0.14285714285714285,
+          "support": 15.0
+        },
+        "peace": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 15.0
+        },
+        "thumbs_up": {
+          "precision": 1.0,
+          "recall": 0.13333333333333333,
+          "f1-score": 0.23529411764705882,
+          "support": 15.0
+        }
+      },
+      "sample_count": 60,
+      "accuracy_wilson_95": [
+        0.21305867552366523,
+        0.44233767026176773
+      ],
+      "interval_caveat": "Binomial interval assumes independent samples; subject/session independence unverified"
+    },
+    "gaussian_blur_radius_2": {
+      "accuracy": 0.8,
+      "precision_macro": 0.8469896331738436,
+      "recall_macro": 0.8,
+      "f1_macro": 0.7860855507914332,
+      "per_class": {
+        "fist": {
+          "precision": 0.6818181818181818,
+          "recall": 1.0,
+          "f1-score": 0.8108108108108109,
+          "support": 15.0
+        },
+        "open_palm": {
+          "precision": 1.0,
+          "recall": 0.4666666666666667,
+          "f1-score": 0.6363636363636364,
+          "support": 15.0
+        },
+        "peace": {
+          "precision": 0.9166666666666666,
+          "recall": 0.7333333333333333,
+          "f1-score": 0.8148148148148148,
+          "support": 15.0
+        },
+        "thumbs_up": {
+          "precision": 0.7894736842105263,
+          "recall": 1.0,
+          "f1-score": 0.8823529411764706,
+          "support": 15.0
+        }
+      },
+      "sample_count": 60,
+      "accuracy_wilson_95": [
+        0.6821819419437211,
+        0.8817149467710251
+      ],
+      "interval_caveat": "Binomial interval assumes independent samples; subject/session independence unverified"
+    },
+    "jpeg_quality_30": {
+      "accuracy": 0.95,
+      "precision_macro": 0.9549632352941176,
+      "recall_macro": 0.95,
+      "f1_macro": 0.9498326513586526,
+      "per_class": {
+        "fist": {
+          "precision": 0.9375,
+          "recall": 1.0,
+          "f1-score": 0.967741935483871,
+          "support": 15.0
+        },
+        "open_palm": {
+          "precision": 1.0,
+          "recall": 0.9333333333333333,
+          "f1-score": 0.9655172413793104,
+          "support": 15.0
+        },
+        "peace": {
+          "precision": 1.0,
+          "recall": 0.8666666666666667,
+          "f1-score": 0.9285714285714286,
+          "support": 15.0
+        },
+        "thumbs_up": {
+          "precision": 0.8823529411764706,
+          "recall": 1.0,
+          "f1-score": 0.9375,
+          "support": 15.0
+        }
+      },
+      "sample_count": 60,
+      "accuracy_wilson_95": [
+        0.8629948352365147,
+        0.9828504978356043
+      ],
+      "interval_caveat": "Binomial interval assumes independent samples; subject/session independence unverified"
+    }
+  },
+  "checkpoint_sha256": "705f864889a1d15cf804e65b22e874723b2eed8ec6b6c3e1cd92e5f0c64839b4",
+  "test_protocol": "Unaugmented source test, evaluated after validation selection; stress separate",
+  "uncertainty": "60 test images, 15/class; subject/session independence unverified"
+}
