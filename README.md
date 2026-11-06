@@ -78,7 +78,7 @@ Primary references: [MobileNetV4 ECCV 2024](https://www.ecva.net/papers/eccv_202
 Source repository: https://github.com/dayosama0/GestureLab (private). The application runs locally; no deployed app or shared video URL is provided. Datasets, trained checkpoints, image-bearing reports and recordings are intentionally excluded from Git. A fresh clone needs the private data and locally trained checkpoints or an explicit training run before prediction is available. Moodle deadline is November 7, 2026 at 23:59 Asia/Almaty; practice-session defense is also required.
 
 
-## Expanded-data GPU iteration (7 November2026)
+## Expanded-data GPU iteration
 
 NewrealHaGRID sourceaudit:400 original UUIDs/labels matched400 distinct upstreamparticipants; originalsource split intersections0. Added 2000 train/400 val/400 test crops excludesall 400 originalpeople. Newtraining2280 images, selection400 images(218 users), freshholdout400 images(292 users); historicaltest60 is separate. Logicalpeace additionallyincludesback-of-hand peace_inverted. See docs/expansion_plan.md and artifacts/expansion_audit.json.
 
