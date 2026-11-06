@@ -1,0 +1,38 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "GestureLab: API",
+      "type": "shell",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "windows": {"command": "${workspaceFolder}\\.venv\\Scripts\\python.exe"},
+      "args": ["-m", "uvicorn", "backend.app.main:app", "--host", "127.0.0.1", "--port", "8000"],
+      "problemMatcher": [], "isBackground": true
+    },
+    {
+      "label": "GestureLab: Frontend",
+      "type": "shell", "command": "npm",
+      "args": ["--prefix", "frontend", "run", "dev"],
+      "problemMatcher": [], "isBackground": true
+    },
+    {
+      "label": "GestureLab: Python tests",
+      "type": "shell",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "windows": {"command": "${workspaceFolder}\\.venv\\Scripts\\python.exe"},
+      "args": ["-m", "pytest", "backend/tests", "ml/tests", "-q"],
+      "problemMatcher": [], "group": "test"
+    },
+    {
+      "label": "GestureLab: Frontend build",
+      "type": "shell", "command": "npm",
+      "args": ["--prefix", "frontend", "run", "build"],
+      "problemMatcher": [], "group": "build"
+    },
+    {
+      "label": "GestureLab: Start app",
+      "dependsOn": ["GestureLab: API", "GestureLab: Frontend"],
+      "dependsOrder": "parallel", "problemMatcher": []
+    }
+  ]
+}

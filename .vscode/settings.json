@@ -1,0 +1,6 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
+  "files.exclude": {"**/__pycache__": true, "**/.pytest_cache": true},
+  "search.exclude": {".venv": true, "frontend/node_modules": true, "data": true, "artifacts/checkpoints": true},
+  "python.analysis.extraPaths": ["${workspaceFolder}"]
+}

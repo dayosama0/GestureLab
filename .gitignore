@@ -1,0 +1,29 @@
+.venv/
+node_modules/
+frontend/dist/
+__pycache__/
+.pytest_cache/
+data/
+source/
+artifacts/checkpoints/
+*.log
+.env
+# Local image-bearing evidence and report remain private pending consent.
+artifacts/verification/*.png
+report/report.pdf
+report/report.md
+frontend/test-results/
+frontend/playwright-report/
+artifacts/demo/
+exports/
+.venv-gpu/
+report/archive/
+*.pt
+*.tsbuildinfo
+# Local tools, temporary renders, and image-bearing Word exports.
+.codex/
+tmp/
+report/*.docx
+report/*.pdf
+CODEX_MASTER_PROMPT.md
+README_START.md
