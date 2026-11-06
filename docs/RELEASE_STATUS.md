@@ -1,6 +1,6 @@
 # Release status - 7 November 2026
 
-Expanded training and local application verification: PASS. The next step is the user's personal iPhone photo check. Final laptop packaging and demo refresh are deliberately deferred until that check. No external publication or transfer was performed.
+Expanded training and local application verification: PASS. The next step is the user's personal iPhone photo check. Final laptop packaging and demo refresh are deliberately deferred until that check. Source code and numeric experiment artifacts are now available in the private repository https://github.com/dayosama0/GestureLab. Dataset images, checkpoints, image-bearing reports and recordings remain local. No laptop transfer or public app deployment was performed.
 
 ## Executed gates
 
